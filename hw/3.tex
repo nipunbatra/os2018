@@ -1,0 +1,64 @@
+\documentclass[]{article}
+\usepackage{hyperref,verbatim}
+\usepackage[usenames, dvipsnames]{color}
+
+%opening
+\title{CSE 301: Operating Systems\\Homework 3 \\(due Noon Nov 5)}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\noindent\fbox{
+	\parbox{\textwidth}{
+		Instructions\\
+		\begin{enumerate}
+			\item The deadline is a hard one. The form upload will close at sharp noon Nov 5th. There will be no extensions.
+			\item Total marks = 6 , Potentially max. marks = 8
+			\item You have to type the assignment using a word processing engine, create a pdf and upload on the form. Please note that only pdf files will be accepted.
+			\item Name the submission as \texttt\{branch\}\_\{roll\_number\}\_\{name\}.pdf
+			\item All code/Jupyter notebooks must be put up as \href{https://gist.github.com/}{\textbf{secret gists}} and linked in the created pdf. Again, only secret gists. Not the public ones.
+			\item Any instances of cheating/plagiarism will not be tolerated at all. 
+			\item Cite all the pertinent references in IEEE format.
+			\item The least count of grading would be 0.5 marks. 
+			\item Some suggestions for plotting - WolframAlpha, Academo.Org, Geogebra, Matploltib, GNUplot, Matlab, Octave
+			\item You can find the course VM on the course web page. The root password is: 1234
+		\end{enumerate}
+	}
+}
+
+
+\begin{enumerate}
+	\item Implement a concurrent B-tree with a simple locking
+	strategy such as a single lock. There are three main operations - search, insert and delete. Measure its performance as the number of
+	concurrent threads increases. Make a simple line plot with x axis as number of threads and y axis as time taken for N operations. Repeat the experiment multiple times to ensure robustness of results.
+	
+	What is the CPU configuration of your laptop? Can you explain the plot in terms of the number of CPU cores and threads.\textbf{[3 marks]}
+	
+	\item Bonus: For above question, let's assume we know that search is called a lot more than insert and delete. Read about readers, writer lock and add the functionality that multiple readers can read concurrently.  \textbf{[2 marks]}
+	
+	\item Write a C program to implement dining philosopher's problem using condition variables and mutex, without using semaphores. \textbf{[1.5 marks]}
+	
+	\item 	Compare the following solution to dining philosopher's problem with the solution given in the text. The comparison has to be done in terms of deadlock avoidance, concurrency and avoiding starvation. You can consider various scenarios, like, 1) eating takes much more time than picking the forks, and any philosopher can think for any length of time; 2) eating is comparable to picking up forks, etc..\textbf{[1.5 mark]}
+	
+	\begin{verbatim}
+		1 void getforks() { 
+	2  mutex_lock(&m)
+	3   sem_wait(forks[left(p)]); 
+	4   sem_wait(forks[right(p)]); 
+	5  mutex_unlock(&m)
+	6 } 	
+
+	\end{verbatim}  
+	 
+\end{enumerate}
+
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,58 @@
+\documentclass[]{article}
+\usepackage{hyperref,verbatim}
+\usepackage[usenames, dvipsnames]{color}
+
+%opening
+\title{CSE 301: Operating Systems\\Homework 4 \\(due Noon Nov 27)}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\noindent\fbox{
+	\parbox{\textwidth}{
+		Instructions\\
+		\begin{enumerate}
+			\item The deadline is a hard one. The form upload will close at sharp noon Nov 27th. There will be no extensions.
+			\item Total marks = 6 	
+			\item You have to type the assignment using a word processing engine, create a pdf and upload on the form. Please note that only pdf files will be accepted.
+			\item Name the submission as \texttt\{branch\}\_\{roll\_number\}\_\{name\}.pdf
+			\item All code/Jupyter notebooks must be put up as \href{https://gist.github.com/}{\textbf{secret gists}} and linked in the created pdf. Again, only secret gists. Not the public ones.
+			\item Any instances of cheating/plagiarism will not be tolerated at all. 
+			\item Cite all the pertinent references in IEEE format.
+			\item The least count of grading would be 0.5 marks. 
+			\item Some suggestions for plotting - WolframAlpha, Academo.Org, Geogebra, Matploltib, GNUplot, Matlab, Octave
+			\item You can find the course VM on the course web page. The root password is: 1234
+		\end{enumerate}
+	}
+}
+
+
+\begin{enumerate}
+	\item Write Python programs (or any other language you want to write in) for:
+	
+	\begin{enumerate}
+		\item Finding the number and size of files in each directory starting from root. Use this to make two plots: i) showing the distribution of number of files in directories. Some directories will have 0 files, some will have 1000s of files. What does this distribution tell you? ii) distribution of file size. What does this tell you? [2 marks]
+		\item Create a simple CSV file where you store the mapping between all the inodes and file names at a given time. Rerun the program after 5 minutes and save a new CSV. What is the difference between the two CSVs? Have new files been allocated, have some files been deleted? If so, which ones and why? [1 mark]
+	\end{enumerate}
+
+
+\item Textbook Chapter 37, question 4. Submit the gifs of the visual run of the programs, along side the explanation [1 mark]
+\item Textbook Chapter 38, question 5. [1 mark]
+\item Mount a pen-drive on your system as read only and show that you're unable to write to it. Attach gif/screenshot [1 mark]
+
+	
+	
+
+	 
+\end{enumerate}
+
+
+
+
+
+
+
+\end{document}
