@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Operating Systems 2018"
+  description: "CS 301 - Operating Systems Course"
+  navbar:
+    title: "OS"
+    left:
+      - text: "Course Home"
+        href: index.qmd
+      - text: "Feedback" 
+        href: feedback.qmd
+      - text: "Lectures"
+        href: lectures.qmd
+      - text: "Projects"
+        href: projects.qmd
+    right:
+      - text: "Instructor Webpage"
+        href: "https://nipunbatra.github.io/"
+  sidebar: false
+  
+  # Google Analytics
+  google-analytics: "UA-96903131-1"
+  
+  page-footer:
+    center: |
+      Powered by [Quarto](https://quarto.org) | 
+      Hosted by [GitHub Pages](https://pages.github.com/) |
+      Photos from [Unsplash](https://unsplash.com)
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - custom.scss
+    toc: true
+    toc-location: right
+    code-fold: true
+    code-tools: true
+
+execute:
+  freeze: auto

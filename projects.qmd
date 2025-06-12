@@ -1,0 +1,14 @@
+---
+title: "Projects"
+subtitle: "A growing collection of your cool projects."
+---
+
+::: {.callout-note}
+This page will display project collections. The original Jekyll projects need to be converted to Quarto format.
+:::
+
+## Course Projects
+
+Projects for the Operating Systems course will be listed here. Students can work in groups of 4 on various OS-related topics.
+
+For project ideas, please refer to the [Course Project Ideas spreadsheet](https://docs.google.com/spreadsheets/d/1eVVmBrCTXHa6XhfewG2S9_if11Ija0s_cNMBp5NMbww/edit?usp=sharing).

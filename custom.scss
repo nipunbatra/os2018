@@ -1,0 +1,58 @@
+/*-- scss:defaults --*/
+
+// Custom variables
+$primary: #2c3e50;
+$secondary: #18bc9c;
+
+/*-- scss:rules --*/
+
+// Custom styling for the OS course site
+.navbar-brand img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+// Table styling for lectures
+table {
+  font-size: 0.9em;
+  
+  th {
+    background-color: $primary;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+}
+
+// Blockquote styling (for feedback)
+blockquote {
+  border-left: 4px solid $secondary;
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+// Course info styling
+.course-info {
+  background-color: #e8f4f8;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+// Link styling
+a {
+  color: $primary;
+  
+  &:hover {
+    color: $secondary;
+    text-decoration: underline;
+  }
+}
