@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - "code/**"
 
 website:
   title: "Operating Systems 2018"
