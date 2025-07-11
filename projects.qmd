@@ -1,14 +1,110 @@
 ---
 title: "Projects"
-subtitle: "A growing collection of your cool projects."
+subtitle: "Building Real-World Operating Systems Solutions"
+format:
+  html:
+    css: custom.scss
 ---
 
+## Project Overview
+
+The Operating Systems course project is a hands-on experience where students work in teams to implement real-world systems solutions. Projects are designed to deepen understanding of OS concepts while building practical skills.
+
 ::: {.callout-note}
-This page will display project collections. The original Jekyll projects need to be converted to Quarto format.
+## Project Timeline
+- **Week 3**: Project selection and team formation
+- **Week 6**: Project proposal submission
+- **Week 10**: Mid-term project review
+- **Week 15**: Final project demonstration and submission
 :::
 
-## Course Projects
+## Project Categories
 
-Projects for the Operating Systems course will be listed here. Students can work in groups of 4 on various OS-related topics.
+### System Programming
+Projects focused on low-level system implementation, including custom schedulers, memory managers, and system call interfaces.
 
-For project ideas, please refer to the [Course Project Ideas spreadsheet](https://docs.google.com/spreadsheets/d/1eVVmBrCTXHa6XhfewG2S9_if11Ija0s_cNMBp5NMbww/edit?usp=sharing).
+**Examples:**
+- Custom process scheduler implementation
+- Memory management system
+- File system design and implementation
+
+### Concurrency & Synchronization
+Projects exploring concurrent programming, synchronization primitives, and parallel system design.
+
+**Examples:**
+- Multi-threaded application server
+- Distributed synchronization algorithms
+- Concurrent data structures
+
+### Performance Analysis
+Projects focused on system performance measurement, analysis, and optimization techniques.
+
+**Examples:**
+- System performance profiling tools
+- Benchmarking frameworks
+- Resource utilization analyzers
+
+## Project Requirements
+
+### Technical Requirements
+- **Language**: Primarily C/C++, with justification for other languages
+- **Platform**: Linux-based systems (Ubuntu VM provided)
+- **Documentation**: Comprehensive technical documentation
+- **Testing**: Unit tests and integration tests where applicable
+- **Version Control**: Git repository with regular commits
+
+### Evaluation Criteria
+
+| Criterion | Weight | Description |
+|-----------|---------|-------------|
+| Technical Implementation | 40% | Code quality, correctness, and efficiency |
+| Innovation & Complexity | 25% | Novelty of approach and technical difficulty |
+| Documentation | 20% | Clarity and completeness of documentation |
+| Presentation | 10% | Quality of final demonstration |
+| Teamwork | 5% | Collaboration and individual contributions |
+
+## Project Ideas
+
+::: {.callout-tip}
+### Explore Project Ideas
+Visit our [Project Ideas Spreadsheet](https://docs.google.com/spreadsheets/d/1eVVmBrCTXHa6XhfewG2S9_if11Ija0s_cNMBp5NMbww/edit?usp=sharing) for a comprehensive list of project suggestions.
+:::
+
+### Featured Projects
+
+#### Custom Memory Allocator
+Implement a high-performance memory allocator that outperforms standard malloc/free for specific workloads.
+
+#### Multi-threaded Web Server
+Build a concurrent web server with custom thread pool management and request scheduling.
+
+#### File System Simulator
+Create a complete file system implementation with advanced features like journaling or compression.
+
+#### System Call Tracer
+Develop a tool for tracing and analyzing system calls made by applications.
+
+## Team Formation
+
+### Team Requirements
+- **Size**: 4 students per team
+- **Diversity**: Encourage diverse skill sets and backgrounds
+- **Commitment**: All members must commit to active participation
+
+### Getting Started
+
+1. **Form Your Team**: Find 3 other committed teammates
+2. **Explore Ideas**: Browse the project ideas spreadsheet
+3. **Choose Your Project**: Select a project that interests all team members
+4. **Submit Proposal**: Prepare and submit your project proposal
+5. **Start Development**: Begin implementation following best practices
+
+::: {.callout-warning}
+### Important Deadlines
+- **Team Formation**: End of Week 3
+- **Project Proposal**: End of Week 6
+- **Mid-term Review**: Week 10
+- **Final Submission**: Week 15
+:::
+
+**Questions?** Contact the teaching assistants or attend office hours for guidance.

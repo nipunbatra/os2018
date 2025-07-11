@@ -1,25 +1,137 @@
 ---
-title: "Operating Systems 2019"
-subtitle: "CS 301"
+title: "Operating Systems"
+subtitle: "CS 301 - Fall 2018"
+format:
+  html:
+    css: custom.scss
 ---
 
-### Operating Systems Fall 2019 (CS 301)
+## Course Information
 
-*   Instructor: Nipun Batra (nipun.batra@iitgn.ac.in)
-*   Teaching Assistants: Rishiraj Adhikary, Varun Gohil. Shreyas Singh
-*   Course Timings
-    *   Lectures: Tuesday (11 AM - 12 Noon), Thursday (11 AM - 12 Noon), Friday (11 AM - 12 Noon) \[AB7/102\]
-    *   Labs: Monday (10:00 AM - 12:00 Noon) \[AB7/109\]
-*   Main textbook: [OS: Three Easy Steps](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-*   [Ubuntu VirtualBox VM image](https://drive.google.com/file/d/1jZVQRuomuYsuK5dkTyuVMxV4oNLFX8Hs/view)
-*   [Course Project Ideas](https://docs.google.com/spreadsheets/d/1eVVmBrCTXHa6XhfewG2S9_if11Ija0s_cNMBp5NMbww/edit?usp=sharing)
-*   [Code used in classes](https://github.com/nipunbatra/nipunbatra.github.io/tree/master/teaching/os-fall-19/code)
-*   Grading policy
-    *   Score negotiation: Only if a question is unchecked, or totaling mistake
-    *   4 Quizzes (10% each): 40%
-    *   Mid semester: None
-    *   End semester: 10%
-    *   2 Homework programming assignment (Individual): 8%
-    *   2 Lab exam (10% each): 20%
-    *   Project (in groups of 4): 20%
-    *   OS [zine](https://jvns.ca/zines/): 2%
+::: {.course-info}
+<div class="info-item">
+  <div class="info-label">Course Code</div>
+  <div class="info-value">CS 301</div>
+</div>
+<div class="info-item">
+  <div class="info-label">Semester</div>
+  <div class="info-value">Fall 2018</div>
+</div>
+<div class="info-item">
+  <div class="info-label">Credits</div>
+  <div class="info-value">3</div>
+</div>
+<div class="info-item">
+  <div class="info-label">Location</div>
+  <div class="info-value">AB7/102</div>
+</div>
+:::
+
+## About This Course
+
+This course provides a comprehensive introduction to operating systems, covering fundamental concepts such as process management, memory management, file systems, and concurrency. Students will gain hands-on experience with system programming and learn how modern operating systems manage computer resources efficiently.
+
+### Learning Objectives
+
+By the end of this course, students will be able to:
+
+- Understand the core principles of operating system design
+- Implement process scheduling algorithms
+- Analyze memory management techniques
+- Design concurrent programs using threads and synchronization
+- Understand file system organization and implementation
+- Evaluate system performance and optimization strategies
+
+### Prerequisites
+
+- Data Structures and Algorithms
+- Computer Organization and Architecture
+- Systems Programming in C
+
+## Staff
+
+### Instructor
+**Nipun Batra**  
+Professor, Computer Science  
+Email: [nipun.batra@iitgn.ac.in](mailto:nipun.batra@iitgn.ac.in)
+
+### Teaching Assistants
+- Chanda
+- Subisha
+- Chamanvir
+
+## Schedule
+
+**Lectures:**  
+Tuesday, Thursday, Friday  
+11:00 AM - 12:00 PM  
+Room AB7/102
+
+**Labs:**  
+Monday  
+10:00 AM - 12:00 PM  
+Room AB7/109
+
+## Course Resources
+
+### Textbook
+[**Operating Systems: Three Easy Pieces**](http://pages.cs.wisc.edu/~remzi/OSTEP/)  
+by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
+
+This free, comprehensive textbook covers all major operating system concepts with clear explanations and practical examples.
+
+### Development Environment
+[**Ubuntu VirtualBox VM**](https://drive.google.com/file/d/1jZVQRuomuYsuK5dkTyuVMxV4oNLFX8Hs/view)
+
+Pre-configured Ubuntu virtual machine with all necessary tools and libraries for course assignments.
+
+### Course Code
+[**Code Examples**](code/)
+
+All code examples, demonstrations, and programming exercises used in lectures and labs:
+- Process API examples (fork, exec, wait)
+- CPU scheduling simulations  
+- Memory management programs
+- Threading and synchronization examples
+
+### Project Ideas
+[**Project Proposals**](https://docs.google.com/spreadsheets/d/1eVVmBrCTXHa6XhfewG2S9_if11Ija0s_cNMBp5NMbww/edit?usp=sharing)
+
+Collection of project ideas and proposals for the course project component.
+
+## Assessment & Grading
+
+| Component | Weight | Description |
+|-----------|---------|-------------|
+| Quizzes (4) | 40% | 10% each, covering major topics |
+| End Semester Exam | 10% | Comprehensive final examination |
+| Programming Assignments (2) | 8% | Individual coding projects |
+| Lab Exams (2) | 20% | 10% each, hands-on practical exams |
+| Group Project | 20% | Team-based implementation project |
+| OS Zine | 2% | Creative technical communication |
+
+### Grading Policies
+
+- **Score Negotiation**: Only for unchecked questions or totaling mistakes
+- **Late Submissions**: 10% penalty per day
+- **Collaboration**: Encouraged for learning, but submissions must be individual
+- **Academic Integrity**: Strictly enforced according to institute policies
+
+### Important Notes
+
+- All programming assignments must compile and run
+- Regular attendance is expected for both lectures and labs
+- Project groups will be formed in the first few weeks
+- The OS Zine is inspired by [Julia Evans' zines](https://jvns.ca/zines/)
+
+## Quick Links
+
+::: {.callout-tip}
+### Get Started
+- [Course Lectures](lectures.qmd) - Watch videos and download slides
+- [Labs](labs.qmd) - Hands-on exercises and practical sessions
+- [Assignments](assignments.qmd) - Programming assignments and homework
+- [Projects](projects.qmd) - Explore project ideas and requirements
+- [Schedule](schedule.qmd) - Important dates and timeline
+- [Resources](resources.qmd) - Books, tools, and additional materials
+:::

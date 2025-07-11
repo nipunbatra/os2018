@@ -1,0 +1,74 @@
+---
+title: "Assignments"
+subtitle: "Programming assignments and homework"
+format:
+  html:
+    css: custom.scss
+---
+
+## Programming Assignments
+
+### Assignment 1: Process API
+**Due: Aug 27**
+
+Practice with the process API, including fork(), exec(), and wait() system calls.
+
+**Files:** [Assignment 1 PDF](hw/1.pdf)
+
+### Assignment 2: Memory Management
+**Due: Nov 15**
+
+Implement memory management techniques including malloc/free and virtual memory concepts.
+
+**Files:** [Assignment 2 PDF](hw/2.pdf)
+
+## Homework Assignments
+
+### Homework 1: CPU Scheduling
+**Due: Sep 4**
+
+Implement and analyze different CPU scheduling algorithms.
+
+**Files:** [Homework 1 PDF](hw/3.pdf)
+
+### Homework 2: Concurrency
+**Due: Oct 22**
+
+Programming exercises on threads, locks, and synchronization.
+
+**Files:** [Homework 2 PDF](hw/4.pdf)
+
+## Assignment Guidelines
+
+### Submission Requirements
+- All code must compile and run on the provided Ubuntu VM
+- Include a README with compilation and execution instructions
+- Submit via the course management system
+- Late submissions: 10% penalty per day
+
+### Grading Criteria
+- **Correctness (60%)**: Does the solution work as specified?
+- **Code Quality (25%)**: Clean, readable, well-commented code
+- **Documentation (10%)**: Clear README and inline comments
+- **Efficiency (5%)**: Reasonable performance and resource usage
+
+### Academic Integrity
+- Individual assignments must be completed independently
+- You may discuss concepts but not share code
+- Cite any external resources or references used
+- Plagiarism will result in course failure
+
+## Getting Help
+
+- **Office Hours**: Weekly sessions with instructor and TAs
+- **Discussion Forum**: Ask questions and help classmates
+- **Lab Sessions**: Hands-on assistance during lab hours
+- **Email**: Contact TAs for specific questions
+
+::: {.callout-tip}
+### Tips for Success
+- Start assignments early to avoid last-minute issues
+- Test your code thoroughly on the provided VM
+- Document your code as you write it
+- Ask questions if you're stuck - don't wait until the deadline
+:::

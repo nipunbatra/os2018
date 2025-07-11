@@ -1,0 +1,147 @@
+---
+title: "Schedule"
+subtitle: "Course timeline and important dates"
+format:
+  html:
+    css: custom.scss
+---
+
+## Course Timeline
+
+### Important Dates
+
+| Date | Event | Description |
+|------|-------|-------------|
+| Aug 6 | **Course Begins** | First lecture: Introduction to OS |
+| Aug 23 | **Quiz 1** | Covers processes and CPU scheduling |
+| Aug 27 | **Assignment 1 Due** | Process API programming |
+| Sep 13 | **Quiz 2** | Covers memory management |
+| Sep 27 | **Mid-semester Break** | No classes |
+| Oct 25 | **Mid-term Lab Exam** | Practical exam covering labs 1-4 |
+| Nov 5 | **Quiz 3** | Covers concurrency and I/O |
+| Nov 15 | **Assignment 2 Due** | Memory management programming |
+| Nov 19 | **Quiz 4** | Covers file systems |
+| Nov 20 | **OS Zine Due** | Creative project submission |
+| Nov 25 | **Final Lab Exam** | Comprehensive lab exam |
+| Dec 15 | **Project Presentations** | Final project demonstrations |
+
+## Weekly Schedule
+
+### Lectures
+- **Tuesday**: 11:00 AM - 12:00 PM (AB7/102)
+- **Thursday**: 11:00 AM - 12:00 PM (AB7/102)
+- **Friday**: 11:00 AM - 12:00 PM (AB7/102)
+
+### Labs
+- **Monday**: 10:00 AM - 12:00 PM (AB7/109)
+
+### Office Hours
+- **Instructor**: Tuesday & Thursday 2:00 PM - 3:00 PM
+- **TAs**: Monday & Wednesday 3:00 PM - 4:00 PM
+
+## Course Phases
+
+### Phase 1: Foundations (Weeks 1-6)
+**Topics:** Introduction, Processes, CPU Scheduling, Memory Basics
+
+**Key Deliverables:**
+- Quiz 1 (Aug 23)
+- Assignment 1 (Aug 27)
+- Lab exercises 1-2
+
+### Phase 2: Memory Management (Weeks 7-10)
+**Topics:** Address Translation, Paging, Swapping, Virtual Memory
+
+**Key Deliverables:**
+- Quiz 2 (Sep 13)
+- Lab exercises 3-4
+- Project proposal
+
+### Phase 3: Concurrency (Weeks 11-14)
+**Topics:** Threads, Locks, Synchronization, Deadlocks
+
+**Key Deliverables:**
+- Mid-term Lab Exam (Oct 25)
+- Quiz 3 (Nov 5)
+- Lab exercises 5-6
+
+### Phase 4: I/O and File Systems (Weeks 15-16)
+**Topics:** I/O Systems, Hard Drives, RAID, File Systems
+
+**Key Deliverables:**
+- Assignment 2 (Nov 15)
+- Quiz 4 (Nov 19)
+- OS Zine (Nov 20)
+- Final Lab Exam (Nov 25)
+- Project presentations (Dec 15)
+
+## Exam Schedule
+
+### Quizzes (40% total)
+- **Quiz 1**: Aug 23 - Processes, CPU Scheduling
+- **Quiz 2**: Sep 13 - Memory Management
+- **Quiz 3**: Nov 5 - Concurrency, I/O
+- **Quiz 4**: Nov 19 - File Systems
+
+### Lab Exams (20% total)
+- **Mid-term Lab Exam**: Oct 25 - Hands-on programming
+- **Final Lab Exam**: Nov 25 - Comprehensive practical exam
+
+### Final Exam (10%)
+- **Date**: TBD during exam period
+- **Duration**: 3 hours
+- **Format**: Written exam covering all course material
+
+## Assignment Timeline
+
+### Programming Assignments (8% total)
+- **Assignment 1**: Process API (Due Aug 27)
+- **Assignment 2**: Memory Management (Due Nov 15)
+
+### Course Project (20%)
+- **Team Formation**: Week 3
+- **Project Proposal**: Week 6
+- **Mid-term Review**: Week 10
+- **Final Presentation**: Week 15
+
+### OS Zine (2%)
+- **Assignment**: Week 12
+- **Due Date**: Nov 20
+- **Format**: Creative technical communication
+
+## Holiday Schedule
+
+### Holidays and Breaks
+- **Aug 15**: Independence Day (No class)
+- **Sep 27 - Oct 14**: Mid-semester break
+- **Oct 18**: No class (Faculty meeting)
+- **Nov 12-13**: Diwali break (No classes)
+
+### Make-up Classes
+- Additional sessions may be scheduled if needed
+- Announcements will be made in advance
+- Check course website for updates
+
+## Study Schedule Recommendations
+
+### Weekly Study Plan
+- **Monday**: Review previous week's lectures
+- **Tuesday**: Preview lecture material
+- **Wednesday**: Work on assignments/projects
+- **Thursday**: Attend lecture and review notes
+- **Friday**: Attend lecture and practice problems
+- **Weekend**: Complete lab exercises and reading
+
+### Exam Preparation
+- **3 weeks before**: Start reviewing all material
+- **2 weeks before**: Practice problems and past exams
+- **1 week before**: Form study groups and clarify doubts
+- **Day before**: Light review and rest well
+
+::: {.callout-warning}
+### Important Notes
+- All dates are subject to change with advance notice
+- Check the course website regularly for updates
+- Inform instructor in advance about any conflicts
+- Late submissions have penalties as per course policy
+:::

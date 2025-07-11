@@ -1,0 +1,492 @@
+[
+  {
+    "objectID": "feedback.html",
+    "href": "feedback.html",
+    "title": "Student Feedback",
+    "section": "",
+    "text": "The course policy was very nice. It lifted a lot of pressure by reducing the weightage of written exams while maintaining the rigor through assignments.\n\n\nI never thought I can learn so many things from one course. I personally am a fan of this course.\n\n\nThe overall content and the planning of the course was the best being offered in the campus. The assignments and the project topics were also very much useful."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Operating Systems",
+    "section": "",
+    "text": "Course Code\n\n\nCS 301\n\n\n\n\nSemester\n\n\nFall 2018\n\n\n\n\nCredits\n\n\n3\n\n\n\n\nLocation\n\n\nAB7/102"
+  },
+  {
+    "objectID": "index.html#course-information",
+    "href": "index.html#course-information",
+    "title": "Operating Systems",
+    "section": "",
+    "text": "Course Code\n\n\nCS 301\n\n\n\n\nSemester\n\n\nFall 2018\n\n\n\n\nCredits\n\n\n3\n\n\n\n\nLocation\n\n\nAB7/102"
+  },
+  {
+    "objectID": "index.html#course-resources",
+    "href": "index.html#course-resources",
+    "title": "Operating Systems",
+    "section": "Course Resources",
+    "text": "Course Resources\n\nTextbook\nOperating Systems: Three Easy Pieces\nby Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau\nThis free, comprehensive textbook covers all major operating system concepts with clear explanations and practical examples.\n\n\nDevelopment Environment\nUbuntu VirtualBox VM\nPre-configured Ubuntu virtual machine with all necessary tools and libraries for course assignments.\n\n\nCourse Code\nCode Examples\nAll code examples, demonstrations, and programming exercises used in lectures and labs: - Process API examples (fork, exec, wait) - CPU scheduling simulations\n- Memory management programs - Threading and synchronization examples\n\n\nProject Ideas\nProject Proposals\nCollection of project ideas and proposals for the course project component."
+  },
+  {
+    "objectID": "index.html#assessment-grading",
+    "href": "index.html#assessment-grading",
+    "title": "Operating Systems",
+    "section": "Assessment & Grading",
+    "text": "Assessment & Grading\n\n\n\nComponent\nWeight\nDescription\n\n\n\n\nQuizzes (4)\n40%\n10% each, covering major topics\n\n\nEnd Semester Exam\n10%\nComprehensive final examination\n\n\nProgramming Assignments (2)\n8%\nIndividual coding projects\n\n\nLab Exams (2)\n20%\n10% each, hands-on practical exams\n\n\nGroup Project\n20%\nTeam-based implementation project\n\n\nOS Zine\n2%\nCreative technical communication\n\n\n\n\nGrading Policies\n\nScore Negotiation: Only for unchecked questions or totaling mistakes\nLate Submissions: 10% penalty per day\nCollaboration: Encouraged for learning, but submissions must be individual\nAcademic Integrity: Strictly enforced according to institute policies\n\n\n\nImportant Notes\n\nAll programming assignments must compile and run\nRegular attendance is expected for both lectures and labs\nProject groups will be formed in the first few weeks\nThe OS Zine is inspired by Julia Evans’ zines"
+  },
+  {
+    "objectID": "index.html#quick-links",
+    "href": "index.html#quick-links",
+    "title": "Operating Systems",
+    "section": "Quick Links",
+    "text": "Quick Links\n\n\n\n\n\n\nGet Started\n\n\n\n\nCourse Lectures - Watch videos and download slides\nLabs - Hands-on exercises and practical sessions\nAssignments - Programming assignments and homework\nProjects - Explore project ideas and requirements\nSchedule - Important dates and timeline\nResources - Books, tools, and additional materials"
+  },
+  {
+    "objectID": "code/CS-Heroes.html",
+    "href": "code/CS-Heroes.html",
+    "title": "",
+    "section": "",
+    "text": "CodeShow All CodeHide All Code\n\n\n\n\n\n\nCode\nimport pandas as pd\nimport pickle\nimport os\nimport datetime\n\n\n\n\nCode\nif not os.path.exists('already-done.txt'):\n    already_done = []\nelse:\n    already_done = list(set([int(x.replace(\"\\n\", \"\")) for x in open('already-done.txt','r').readlines()]))\n\n\n\n\nCode\nalready_done\n\n\n[16110083,\n 16110084,\n 16110091,\n 16110094,\n 16110100,\n 16110103,\n 16110104,\n 16110105,\n 16110108,\n 15110053,\n 16110119,\n 16110120,\n 16110125,\n 17310001,\n 16110136,\n 16110141,\n 16110142,\n 16110143,\n 16110016,\n 16110147,\n 16110020,\n 16110149,\n 16110150,\n 16110148,\n 16110024,\n 16110026,\n 16110027,\n 16110157,\n 16110047,\n 16110048,\n 16110053,\n 16110059,\n 16110062,\n 15110004,\n 15110015]\n\n\n\n\nCode\ndf = pd.read_csv(\"/Users/nipun/Downloads/CS-Heroes - Sheet1.csv\")\n\n\n\n\nCode\nfound_new = False\nwhile(not found_new):\n    sel = df.sample(n=1)['RollNo'].values[0]\n    if sel not in already_done:\n        found_new = True\n    else:\n        print(\"Looks like random is hard on: {}\".format(df[df['RollNo']==sel]['Student Name']))\n\n\nLooks like random is hard on: 1    Anand Yadav\nName: Student Name, dtype: object\nLooks like random is hard on: 1    Anand Yadav\nName: Student Name, dtype: object\nLooks like random is hard on: 10    Debanuj Nayak\nName: Student Name, dtype: object\nLooks like random is hard on: 27    S Vinu Sankar\nName: Student Name, dtype: object\nLooks like random is hard on: 6    Atishay Jain Atishay Jain\nName: Student Name, dtype: object\nLooks like random is hard on: 21    Parmar Monarch\nName: Student Name, dtype: object\nLooks like random is hard on: 23    Rahul Challa\nName: Student Name, dtype: object\nLooks like random is hard on: 12    Gohil Varun\nName: Student Name, dtype: object\nLooks like random is hard on: 15    Kunal Verma\nName: Student Name, dtype: object\nLooks like random is hard on: 32    Tom Issac\nName: Student Name, dtype: object\n\n\n\n\nCode\nalready_done.append(sel)\n\n\n\n\nCode\nwith open('already-done.txt','w') as g:\n    for roll in already_done:\n        g.write(\"%d\\n\" %roll)\n\n\n\n\nCode\nprint(\"*\"*80)\ntom = datetime.date.today() + datetime.timedelta(days=1)\nprint(\"The chosen one for {}\".format(tom))\nprint(\"*\"*80)\nprint(df[df['RollNo']==sel][['RollNo','Student Name', 'Email Id']])\nprint(\"*\"*80)\n\n\n********************************************************************************\nThe chosen one for 2018-10-14\n********************************************************************************\n      RollNo   Student Name                   Email Id\n24  16110137  Rendla Aditya  rendla.aditya@iitgn.ac.in\n********************************************************************************\n\n\n\n\nCode\nlen(already_done)\n\n\n36"
+  },
+  {
+    "objectID": "labs/12-Sep.html",
+    "href": "labs/12-Sep.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\nWorking of kernel modules demonstrated by TA\nWorking of strace demonstrated by TA\nQuestions 1-7 from Chapter 21- Beyond Physical Memory mechanisms"
+  },
+  {
+    "objectID": "labs/15-Sep.html",
+    "href": "labs/15-Sep.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\nWorking of kernel modules demonstrated by TA\nWorking of strace demonstrated by TA\nQuestions 1-7 from Chapter 21- Beyond Physical Memory mechanisms"
+  },
+  {
+    "objectID": "labs/14-Nov.html",
+    "href": "labs/14-Nov.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\nSolve all questions from: http://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf"
+  },
+  {
+    "objectID": "labs/7-Nov.html",
+    "href": "labs/7-Nov.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\nMulti-threading in Python\nUse locks in Python\nImplement simple multi-threaded download manager in Python\nMulti-processing in Python\nMulti-process download manager in Python"
+  },
+  {
+    "objectID": "labs/24-Oct.html",
+    "href": "labs/24-Oct.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\nAll questions from Chapter 29 - Locked data structures"
+  },
+  {
+    "objectID": "labs/19-Sep.html",
+    "href": "labs/19-Sep.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n1. Install Chromium for Linux\n2. Use ps command to find all threads for Chrome\n3. Open new tabs in Chrome. How does the number of threads increase\n4. Use top command for find all threads for Chrome\n5. Use pstree to find all threads for Chrome\n6. Use /proc/pid to find out more:\n    1. cmdline?\n    2. Exe? Hexdump on exe.\n    3. Status\n    4. Tasks\n    5. Explore other things...\n    6. can you see the process page map?\n7. What are different processes and threads corresponding to Chrome\n    1. What are their cmdlines\n    2. Open Chrome in different modes using different arguments and see how #threads/processes vary per #tabs/#unique domains\n    3. Any secret key?\n    4. How does Chrome send data to Google?\n    5. Syscalls? Attach strace to the process\n8. What does /proc contain\n    1. watch -n 1 cat interrupts\n    2. cat cpuinfo\n    3. devices\n    4.  ...\n    5. ...\n9. Write hello world threaded program without any variable sharing\n10. How do you compile this program?\n11. Write hello world program that has two threads increasing the value of a counter\n    1. Do an object dump to find the critical section of the cod"
+  },
+  {
+    "objectID": "labs/26-Sep.html",
+    "href": "labs/26-Sep.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\nLab assignment for 26th Sept 2018 for CSE 301\nReference: https://computing.llnl.gov/tutorials/pthreads/\nNB: The bonus questions will not be discussed for the whole class. Some of them are open ended too. Every few minutes the instructor will solve the questions for the whole class. You can also find the solutions here.\n\nWrite a simple hello world program which uses 2 threads, each displaying its unique number/id - A and B. What happens if you do not use join? Extend the above program to use join.\n\nNow create an array of 20 threads and the argument to be passed these threads is integer 1-20. Use join to ensure a specific thread ordering. Run this program multiple times to show that the ordering between different threads can be different on different runs.\nIn each of these threads define a variable x. Print the address of x? Do you see different addressed per thread? Why is this the case?\nBonus Use pstree, ps, top to dig more information about these threads. You may need to add some delays in the code to be able to see the results of these commands.\n\nWrite a program to pass multiple arguments to the calling thread function. Hint use structs.\n\nBonus Use pstree, ps, top along with watch to see how more threads are getting created.\n\nWrite a multi-threaded program which shares a variable count across multiple threads. Increment the variable in each thread for a given number of times in a loop. Use objtool to disassemble the code and find the critical section."
+  },
+  {
+    "objectID": "labs/17-Oct.html",
+    "href": "labs/17-Oct.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "labs/17-Oct.html#applications-of-multi-threading",
+    "href": "labs/17-Oct.html#applications-of-multi-threading",
+    "title": "",
+    "section": "Applications of multi-threading",
+    "text": "Applications of multi-threading\n\nWrite a multi-threaded program with 2 threads to add the numbers in a large array. The first thread adds the first half elements, the second thread adds the second half elements. Also, write a non-threaded program to compute the result. Do you get the same answer?\n\nNow, write a generalised version of this code, which can allow any number of threads. If you use the ceil function from math.h, how do you compile the program?\nThis program can be written in two ways - one create the array as a global variable; second pass the array as an argument to the n threads. Write both implementations. Do you get the same answer both the implementations?\nWhat is the maximum number of threads that works for you? What is thr maximum allowed number of threads?\nBonus Study multi-processing and multi-threading in Python. Use pool to parallelize image processing on a large batch of images. Do some simple operation like batch convert from colour to grayscale."
+  },
+  {
+    "objectID": "labs/17-Oct.html#empirical-evaluationscientific-experiments",
+    "href": "labs/17-Oct.html#empirical-evaluationscientific-experiments",
+    "title": "",
+    "section": "Empirical evaluation/scientific experiments",
+    "text": "Empirical evaluation/scientific experiments\nBonus Vary the number of threads and compute time v/s number of threads. Vary the size of the array now to see if more threads means more performance."
+  },
+  {
+    "objectID": "labs/17-Oct.html#try-to-build-a-trivial-lock-without-hardware-support",
+    "href": "labs/17-Oct.html#try-to-build-a-trivial-lock-without-hardware-support",
+    "title": "",
+    "section": "Try to build a trivial lock without hardware support",
+    "text": "Try to build a trivial lock without hardware support\n\nUse load-store to implement a basic version of a lock. See Book 28.6. Run the program and confirm that this lock still does not solve the issue of mutual exclusion. Use objdump to disassemble the code and find the critical section.\n\nUse atomic types in c11 to create correct concurrent thread program to increment counter. Reference: https://lumian2015.github.io/lockFreeProgramming/c11-features-in-currency.html\nBonus Compute the time spent spinning on the CPU waiting for the other thread to release the lock."
+  },
+  {
+    "objectID": "labs/17-Oct.html#build-a-correct-lock",
+    "href": "labs/17-Oct.html#build-a-correct-lock",
+    "title": "",
+    "section": "Build a correct lock!",
+    "text": "Build a correct lock!\n\nUse pthread mutex to write a fully correct working version of a multi-threaded program which shares a variable count across multiple threads. Increment the variable in each thread for a given number of times in a loop.. Use objdump to disassemble the code and find out more."
+  },
+  {
+    "objectID": "labs/17-Oct.html#tools-for-threads-and-synchronisation",
+    "href": "labs/17-Oct.html#tools-for-threads-and-synchronisation",
+    "title": "",
+    "section": "Tools for threads and synchronisation",
+    "text": "Tools for threads and synchronisation\n\nQuestions 1 and 2 from the textbook Chapter 27 (Threads API)."
+  },
+  {
+    "objectID": "labs/17-Oct.html#mixing-assembly-and-c",
+    "href": "labs/17-Oct.html#mixing-assembly-and-c",
+    "title": "",
+    "section": "Mixing assembly and C",
+    "text": "Mixing assembly and C\n\nWrite a simple single threaded program in C to increment a number by 1. The increment should be done via inline assembly."
+  },
+  {
+    "objectID": "labs/17-Oct.html#build-your-own-thread-using-assembly-and-atomic-hardware-instructions",
+    "href": "labs/17-Oct.html#build-your-own-thread-using-assembly-and-atomic-hardware-instructions",
+    "title": "",
+    "section": "Build your own thread using assembly and atomic hardware instructions",
+    "text": "Build your own thread using assembly and atomic hardware instructions\n\nUse xchg instruction in assembly to build your own lock. Test for its correctness by comparing to Q3."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "The Operating Systems course project is a hands-on experience where students work in teams to implement real-world systems solutions. Projects are designed to deepen understanding of OS concepts while building practical skills.\n\n\n\n\n\n\nProject Timeline\n\n\n\n\nWeek 3: Project selection and team formation\nWeek 6: Project proposal submission\nWeek 10: Mid-term project review\nWeek 15: Final project demonstration and submission"
+  },
+  {
+    "objectID": "projects.html#course-projects",
+    "href": "projects.html#course-projects",
+    "title": "Projects",
+    "section": "Course Projects",
+    "text": "Course Projects\nProjects for the Operating Systems course will be listed here. Students can work in groups of 4 on various OS-related topics.\nFor project ideas, please refer to the Course Project Ideas spreadsheet."
+  },
+  {
+    "objectID": "lectures.html",
+    "href": "lectures.html",
+    "title": "Lectures",
+    "section": "",
+    "text": "Course Videos\n\n\n\nAll lectures are available on YouTube. Click on any lecture title to watch the corresponding video.\nComplete Playlist: Operating Systems 2019 - YouTube Playlist"
+  },
+  {
+    "objectID": "lectures.html#course-schedule",
+    "href": "lectures.html#course-schedule",
+    "title": "Lectures",
+    "section": "Course Schedule",
+    "text": "Course Schedule\n\n\n\nWeek\nDate\nTopic\nVideo\nSlides\nLab\nAssignment\n\n\n\n\n1\nAug 6\nLogistics & Introduction to OS\nVideo\nPDF\n\n\n\n\n\nAug 7\n\n\n\n\n\n\n\n2\nAug 8\nProcesses\nVideo\nPDF\n\n\n\n\n3\nAug 9\nProcess API\nVideo\nPDF\n\n\n\n\n\nAug 12\n\n\n\nLab 1\n\n\n\n4\nAug 13\nCPU Scheduling\nVideo\nPDF\n\nProject topics\n\n\n5\nAug 14\nCPU Scheduling (cont.)\nVideo\nPDF\n\n\n\n\n\nAug 15\nHoliday\n\n\n\n\n\n\n6\nAug 16\nCPU Scheduling 2\nVideo\nPDF\n\n\n\n\n7\nAug 17\nMLFQ + LDE\nVideo\nPDF\n\n\n\n\n8\nAug 17\nMemory Introduction\nVideo\nPDF\n\n\n\n\n\nAug 19\n\n\n\nProcess API exercises\n\n\n\n9\nAug 20\nMemory Management\nVideo\nPDF\n\n\n\n\n10\nAug 21\nBase & Bounds\nVideo\nPDF\n\n\n\n\n11\nAug 23\nQuiz 1\n\nQuiz\n\n\n\n\n\nAug 26\n\n\n\n\nProject timeline\n\n\n12\nAug 27\nSegmentation\nVideo\nPDF\n\nAssignment #1\n\n\n13\nAug 28\nPaging & TLBs\nVideo\nPDF\n\n\n\n\n14\nAug 30\nAdvanced Paging\nVideo\nPDF\n\n\n\n\n\nSep 3\nPaging & Swapping\nVideo\nPDF\n\n\n\n\n15\nSep 4\n\n\n\nChapter 14 questions\n\n\n\n16\nSep 4\nFree Memory\nVideo\nPDF\n\n\n\n\n17\nSep 6\nSwapping\nVideo\nPDF\n\nProject phase 1\n\n\n18\nSep 10\nSwapping (cont.)\nVideo\nPDF\n\n\n\n\n\nSep 11\n\n\n\nChapter 15-17\n\n\n\n19\nSep 12\n\n\n\n\n\n\n\n20\nSep 13\nQuiz 2\n\nQuiz\n\n\n\n\n\nSep 16\n\n\n\nLab quiz\n\n\n\n21\nSep 17\nConcurrency\nVideo\nPDF\n\n\n\n\n\nSep 18\nLinux Memory\nVideo\n\n\n\n\n\n22\nSep 19\nConcurrency (cont.)\nVideo\nPDF\n\n\n\n\n23\nSep 20\nLocks\nVideo\nPDF\n\n\n\n\n24\nSep 24\nAdvanced Locks\nVideo\nPDF\n\n\n\n\n\nSep 25\n\n\n\nThread Lab\n\n\n\n25\nSep 26\nCondition Variables\nVideo\nPDF\n\n\n\n\n\nSep 27\nMid Semester Break\n\n\n\n\n\n\n26\nOct 15\nConcurrency Review\nVideo\nPDF\n\n\n\n\n\nOct 16\n\n\n\nThread API\n\n\n\n27\nOct 17\nCondition Variables\nVideo\nPDF\n\n\n\n\n\nOct 18\nNo Class\n\n\n\n\n\n\n28\nOct 22\nCondition Variables 2\nVideo\nPDF\nLocks Lab\n\n\n\n29\nOct 23\nSemaphores\nVideo\nPDF\n\n\n\n\n30\nOct 25\nDeadlocks\nVideo\nPDF\n\n\n\n\n31\nOct 29\n\n\n\n\n\n\n\n32\nOct 30\nDeadlocks 2\nVideo\nPDF\nConcurrent DS\n\n\n\n\n\nBugs\nVideo\nPDF\n\n\n\n\n33\nOct 31\nI/O & Disks\nVideo\nPDF\n\n\n\n\n34\nNov 1\nRAID\nVideo\nPDF\n\n\n\n\n\nNov 5\nQuiz 3\n\n\n\nProject demo\n\n\n35\nNov 6\nRAID 2\nVideo\nPDF\nChapter 39\n\n\n\n\n\nFile Systems\nVideo\nPDF\n\n\n\n\n36\nNov 8\nFile Systems 2\nVideo\nPDF\n\n\n\n\n37\nNov 11\nFS Implementation\nVideo\nPDF\n\n\n\n\n\nNov 15\n\n\n\n\nAssignment #2\n\n\n\nNov 19\nQuiz 4\n\n\n\n\n\n\n\nNov 20\n\n\n\n\nOS Zine\n\n\n\nNov 25\n\n\n\nLab exam\n\n\n\n\n\n\n\n\n\n\n\nQuick Access\n\n\n\n\nComplete YouTube Playlist\nCourse Textbook: “Operating Systems: Three Easy Pieces”\nCode Examples"
+  },
+  {
+    "objectID": "projects.html#course-project-overview",
+    "href": "projects.html#course-project-overview",
+    "title": "Projects",
+    "section": "",
+    "text": "The Operating Systems course project is a hands-on experience where students work in teams to implement real-world systems solutions. Projects are designed to deepen understanding of OS concepts while building practical skills in system programming, performance optimization, and collaborative development.\n\n\n\n\n\n\nProject Timeline\n\n\n\n\nWeek 3: Project selection and team formation\nWeek 6: Project proposal submission\nWeek 10: Mid-term project review\nWeek 15: Final project demonstration and submission"
+  },
+  {
+    "objectID": "projects.html#project-categories",
+    "href": "projects.html#project-categories",
+    "title": "Projects",
+    "section": "Project Categories",
+    "text": "Project Categories\n\nSystem Programming\nProjects focused on low-level system implementation, including custom schedulers, memory managers, and system call interfaces.\nExamples: - Custom process scheduler implementation - Memory management system - File system design and implementation\n\n\nConcurrency & Synchronization\nProjects exploring concurrent programming, synchronization primitives, and parallel system design.\nExamples: - Multi-threaded application server - Distributed synchronization algorithms - Concurrent data structures\n\n\nPerformance Analysis\nProjects focused on system performance measurement, analysis, and optimization techniques.\nExamples: - System performance profiling tools - Benchmarking frameworks - Resource utilization analyzers"
+  },
+  {
+    "objectID": "projects.html#project-requirements",
+    "href": "projects.html#project-requirements",
+    "title": "Projects",
+    "section": "Project Requirements",
+    "text": "Project Requirements\n\nTechnical Requirements\n\nLanguage: Primarily C/C++, with justification for other languages\nPlatform: Linux-based systems (Ubuntu VM provided)\nDocumentation: Comprehensive technical documentation\nTesting: Unit tests and integration tests where applicable\nVersion Control: Git repository with regular commits\n\n\n\nEvaluation Criteria\n\n\n\n\n\n\n\n\nCriterion\nWeight\nDescription\n\n\n\n\nTechnical Implementation\n40%\nCode quality, correctness, and efficiency\n\n\nInnovation & Complexity\n25%\nNovelty of approach and technical difficulty\n\n\nDocumentation\n20%\nClarity and completeness of documentation\n\n\nPresentation\n10%\nQuality of final demonstration\n\n\nTeamwork\n5%\nCollaboration and individual contributions"
+  },
+  {
+    "objectID": "projects.html#project-ideas",
+    "href": "projects.html#project-ideas",
+    "title": "Projects",
+    "section": "Project Ideas",
+    "text": "Project Ideas\n\n\n\n\n\n\nExplore Project Ideas\n\n\n\nVisit our Project Ideas Spreadsheet for a comprehensive list of project suggestions.\n\n\n\nFeatured Projects\n\nCustom Memory Allocator\nImplement a high-performance memory allocator that outperforms standard malloc/free for specific workloads.\n\n\nMulti-threaded Web Server\nBuild a concurrent web server with custom thread pool management and request scheduling.\n\n\nFile System Simulator\nCreate a complete file system implementation with advanced features like journaling or compression.\n\n\nSystem Call Tracer\nDevelop a tool for tracing and analyzing system calls made by applications."
+  },
+  {
+    "objectID": "projects.html#team-formation",
+    "href": "projects.html#team-formation",
+    "title": "Projects",
+    "section": "Team Formation",
+    "text": "Team Formation\n\nTeam Requirements\n\nSize: 4 students per team\nDiversity: Encourage diverse skill sets and backgrounds\nCommitment: All members must commit to active participation\n\n\n\nGetting Started\n\nForm Your Team: Find 3 other committed teammates\nExplore Ideas: Browse the project ideas spreadsheet\nChoose Your Project: Select a project that interests all team members\nSubmit Proposal: Prepare and submit your project proposal\nStart Development: Begin implementation following best practices\n\n\n\n\n\n\n\nImportant Deadlines\n\n\n\n\nTeam Formation: End of Week 3\nProject Proposal: End of Week 6\nMid-term Review: Week 10\nFinal Submission: Week 15\n\n\n\nQuestions? Contact the teaching assistants or attend office hours for guidance."
+  },
+  {
+    "objectID": "projects.html#resources-support",
+    "href": "projects.html#resources-support",
+    "title": "Projects",
+    "section": "Resources & Support",
+    "text": "Resources & Support\n\nDevelopment Environment\n\nVirtual Machine: Ubuntu VM with pre-installed development tools\nCode Repository: GitHub classroom for version control\nCommunication: Slack workspace for team collaboration\n\n\n\nFaculty Support\n\nOffice Hours: Weekly office hours for project guidance\nCode Reviews: Mid-term code review sessions\nTechnical Mentoring: One-on-one mentoring sessions as needed\n\n\n\nTools & Libraries\n\nProfiling: gprof, perf, valgrind\nTesting: CUnit, Google Test\nDocumentation: Doxygen, LaTeX\nBuild Systems: Make, CMake"
+  },
+  {
+    "objectID": "projects.html#getting-started",
+    "href": "projects.html#getting-started",
+    "title": "Projects",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nForm Your Team: Find 3 other committed teammates\nExplore Ideas: Browse the project ideas spreadsheet\nChoose Your Project: Select a project that interests all team members\nSubmit Proposal: Prepare and submit your project proposal\nStart Development: Begin implementation following best practices\n\n\n\n\n\n\n\nImportant Deadlines\n\n\n\n\nTeam Formation: End of Week 3\nProject Proposal: End of Week 6\nMid-term Review: Week 10\nFinal Submission: Week 15\n\n\n\n\nQuestions? Contact the teaching assistants or attend office hours for guidance on project selection and technical implementation."
+  },
+  {
+    "objectID": "feedback.html#course-philosophy",
+    "href": "feedback.html#course-philosophy",
+    "title": "Student Feedback",
+    "section": "",
+    "text": "We believe that learning is a collaborative process that benefits from continuous feedback and improvement. Your insights help us enhance the course experience for current and future students."
+  },
+  {
+    "objectID": "feedback.html#student-testimonials",
+    "href": "feedback.html#student-testimonials",
+    "title": "Student Feedback",
+    "section": "",
+    "text": "The course policy was very nice. It lifted a lot of pressure by reducing the weightage of written exams while maintaining the rigor through assignments.\n\n\nI never thought I can learn so many things from one course. I personally am a fan of this course.\n\n\nThe overall content and the planning of the course was the best being offered in the campus. The assignments and the project topics were also very much useful."
+  },
+  {
+    "objectID": "feedback.html#feedback-categories",
+    "href": "feedback.html#feedback-categories",
+    "title": "Student Feedback",
+    "section": "Feedback Categories",
+    "text": "Feedback Categories\n\n\n::: {.card}\n::: {.card-header}\n### Teaching Methodology\n:::\n::: {.card-body}\nStudents consistently praise the hands-on approach, with recorded lectures providing flexibility for review and self-paced learning.\n\n**Key Strengths:**\n- Interactive lectures with live coding\n- Real-world examples and applications\n- Accessible video content on YouTube\n:::\n:::\n\n\n::: {.card}\n::: {.card-header}\n### Assessment Strategy\n:::\n::: {.card-body}\nThe balanced assessment approach reduces exam pressure while maintaining academic rigor through practical assignments.\n\n**Key Strengths:**\n- Emphasis on practical skills over memorization\n- Project-based learning opportunities\n- Regular feedback through quizzes and labs\n:::\n:::\n\n\n\n\n::: {.card}\n::: {.card-header}\n### Course Content\n:::\n::: {.card-body}\nStudents appreciate the comprehensive coverage of operating systems concepts with modern, relevant examples.\n\n**Key Strengths:**\n- Up-to-date curriculum reflecting industry needs\n- Clear progression from basic to advanced topics\n- Integration of theory with practical implementation\n:::\n:::\n\n\n::: {.card}\n::: {.card-header}\n### Learning Resources\n:::\n::: {.card-body}\nThe variety of learning materials caters to different learning styles and preferences.\n\n**Key Strengths:**\n- High-quality video lectures\n- Comprehensive written materials\n- Practical coding exercises and examples\n:::\n:::"
+  },
+  {
+    "objectID": "feedback.html#areas-of-excellence",
+    "href": "feedback.html#areas-of-excellence",
+    "title": "Student Feedback",
+    "section": "Areas of Excellence",
+    "text": "Areas of Excellence\n\n1. Practical Focus\nStudents consistently highlight the course’s emphasis on hands-on learning and real-world application of operating systems concepts.\n\n\n2. Flexible Learning\nThe availability of recorded lectures and online resources allows students to learn at their own pace and revisit complex topics.\n\n\n3. Comprehensive Coverage\nThe course successfully covers a broad range of operating systems topics while maintaining depth in critical areas.\n\n\n4. Engaging Projects\nThe project component allows students to apply their learning in meaningful ways, often resulting in portfolio-worthy implementations."
+  },
+  {
+    "objectID": "feedback.html#continuous-improvement",
+    "href": "feedback.html#continuous-improvement",
+    "title": "Student Feedback",
+    "section": "Continuous Improvement",
+    "text": "Continuous Improvement\nBased on student feedback, we continuously refine the course to better serve learning objectives:\n\nEnhanced Video Quality: Improved recording and editing for better online learning experience\nUpdated Examples: Regular updates to code examples and case studies to reflect current technology\nExpanded Resources: Additional learning materials and references based on student requests\nImproved Assessment: Refined rubrics and feedback mechanisms for better learning outcomes"
+  },
+  {
+    "objectID": "feedback.html#share-your-feedback",
+    "href": "feedback.html#share-your-feedback",
+    "title": "Student Feedback",
+    "section": "Share Your Feedback",
+    "text": "Share Your Feedback\nWe welcome feedback from all students to help us improve the course experience. Contact the instructor directly or use the anonymous feedback system for suggestions."
+  },
+  {
+    "objectID": "feedback.html#impact-on-learning",
+    "href": "feedback.html#impact-on-learning",
+    "title": "Student Feedback",
+    "section": "Impact on Learning",
+    "text": "Impact on Learning\nThe positive feedback reflects our commitment to creating a learning environment that:\n\nBalances Theory and Practice: Ensuring students understand both the conceptual foundations and practical applications\nReduces Stress: Creating an assessment structure that encourages learning rather than cramming\nBuilds Confidence: Providing opportunities for students to succeed through diverse assessment methods\nPrepares for Industry: Focusing on skills and knowledge directly applicable to professional software development\n\n\nThank you to all students who have provided feedback over the years. Your insights drive continuous improvement and help us create a better learning experience for everyone."
+  },
+  {
+    "objectID": "index.html#about-this-course",
+    "href": "index.html#about-this-course",
+    "title": "Operating Systems",
+    "section": "About This Course",
+    "text": "About This Course\nThis course provides a comprehensive introduction to operating systems, covering fundamental concepts such as process management, memory management, file systems, and concurrency. Students will gain hands-on experience with system programming and learn how modern operating systems manage computer resources efficiently.\n\nLearning Objectives\nBy the end of this course, students will be able to:\n\nUnderstand the core principles of operating system design\nImplement process scheduling algorithms\nAnalyze memory management techniques\nDesign concurrent programs using threads and synchronization\nUnderstand file system organization and implementation\nEvaluate system performance and optimization strategies\n\n\n\nPrerequisites\n\nData Structures and Algorithms\nComputer Organization and Architecture\nSystems Programming in C"
+  },
+  {
+    "objectID": "index.html#staff",
+    "href": "index.html#staff",
+    "title": "Operating Systems",
+    "section": "Staff",
+    "text": "Staff\n\nInstructor\nNipun Batra\nProfessor, Computer Science\nEmail: nipun.batra@iitgn.ac.in\n\n\nTeaching Assistants\n\nChanda\nSubisha\nChamanvir"
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Operating Systems",
+    "section": "Schedule",
+    "text": "Schedule\nLectures:\nTuesday, Thursday, Friday\n11:00 AM - 12:00 PM\nRoom AB7/102\nLabs:\nMonday\n10:00 AM - 12:00 PM\nRoom AB7/109"
+  },
+  {
+    "objectID": "feedback.html#course-strengths",
+    "href": "feedback.html#course-strengths",
+    "title": "Student Feedback",
+    "section": "Course Strengths",
+    "text": "Course Strengths\n\nTeaching Methodology\nStudents consistently praise the hands-on approach, with recorded lectures providing flexibility for review and self-paced learning.\n\n\nAssessment Strategy\nThe balanced assessment approach reduces exam pressure while maintaining academic rigor through practical assignments.\n\n\nCourse Content\nStudents appreciate the comprehensive coverage of operating systems concepts with modern, relevant examples."
+  },
+  {
+    "objectID": "projects.html#project-overview",
+    "href": "projects.html#project-overview",
+    "title": "Projects",
+    "section": "",
+    "text": "The Operating Systems course project is a hands-on experience where students work in teams to implement real-world systems solutions. Projects are designed to deepen understanding of OS concepts while building practical skills.\n\n\n\n\n\n\nProject Timeline\n\n\n\n\nWeek 3: Project selection and team formation\nWeek 6: Project proposal submission\nWeek 10: Mid-term project review\nWeek 15: Final project demonstration and submission"
+  },
+  {
+    "objectID": "labs.html",
+    "href": "labs.html",
+    "title": "Labs",
+    "section": "",
+    "text": "Date: Aug 12\nTopic: Process commands (top, ps, htop)\nLearn to use Unix process management tools and understand process states.\nMaterials: Lab 1 PDF\n\n\n\nDate: Sep 25\nTopic: Thread Introduction + Chrome Process Model\nIntroduction to threading concepts and understanding Chrome’s multi-process architecture.\nMaterials: Lab 2 Instructions\n\n\n\nDate: Oct 16\nTopic: Thread API and Basic Locks\nPractice with pthread API and implement basic locking mechanisms.\nMaterials: Lab 3 Instructions\n\n\n\nDate: Oct 22\nTopic: Locks Implementation\nImplement and test different types of locks and synchronization primitives.\nMaterials: Lab 4 Instructions\n\n\n\nDate: Oct 30\nTopic: Concurrent Data Structures\nDesign and implement thread-safe data structures.\nMaterials: Lab 5 Instructions\n\n\n\nDate: Nov 7\nTopic: Memory allocation and management\nImplement memory allocators and understand virtual memory concepts.\nMaterials: Lab 6 Instructions\n\n\n\nDate: Nov 14\nTopic: File system implementation\nExplore file system internals and implement basic file operations.\nMaterials: Lab 7 Instructions\n\n\n\nDate: Dec 12\nTopic: System performance analysis\nUse profiling tools to analyze and optimize system performance.\nMaterials: Lab 8 Instructions"
+  },
+  {
+    "objectID": "labs.html#lab-schedule",
+    "href": "labs.html#lab-schedule",
+    "title": "Labs",
+    "section": "",
+    "text": "Date: Aug 12\nTopic: Process commands (top, ps, htop)\nLearn to use Unix process management tools and understand process states.\nMaterials: Lab 1 PDF\n\n\n\nDate: Sep 25\nTopic: Thread Introduction + Chrome Process Model\nIntroduction to threading concepts and understanding Chrome’s multi-process architecture.\nMaterials: Lab 2 Instructions\n\n\n\nDate: Oct 16\nTopic: Thread API and Basic Locks\nPractice with pthread API and implement basic locking mechanisms.\nMaterials: Lab 3 Instructions\n\n\n\nDate: Oct 22\nTopic: Locks Implementation\nImplement and test different types of locks and synchronization primitives.\nMaterials: Lab 4 Instructions\n\n\n\nDate: Oct 30\nTopic: Concurrent Data Structures\nDesign and implement thread-safe data structures.\nMaterials: Lab 5 Instructions\n\n\n\nDate: Nov 7\nTopic: Memory allocation and management\nImplement memory allocators and understand virtual memory concepts.\nMaterials: Lab 6 Instructions\n\n\n\nDate: Nov 14\nTopic: File system implementation\nExplore file system internals and implement basic file operations.\nMaterials: Lab 7 Instructions\n\n\n\nDate: Dec 12\nTopic: System performance analysis\nUse profiling tools to analyze and optimize system performance.\nMaterials: Lab 8 Instructions"
+  },
+  {
+    "objectID": "labs.html#lab-guidelines",
+    "href": "labs.html#lab-guidelines",
+    "title": "Labs",
+    "section": "Lab Guidelines",
+    "text": "Lab Guidelines\n\nPreparation\n\nRead the lab instructions before attending\nSet up your development environment\nReview related lecture materials\nCome with specific questions\n\n\n\nDuring Lab\n\nWork collaboratively but submit individual reports\nAsk TAs for help when needed\nDocument your findings and observations\nTest your solutions thoroughly\n\n\n\nLab Reports\n\nSubmit a brief report (1-2 pages) after each lab\nInclude screenshots, code snippets, and analysis\nAnswer all questions posed in the lab instructions\nSubmit within one week of the lab session"
+  },
+  {
+    "objectID": "labs.html#lab-exams",
+    "href": "labs.html#lab-exams",
+    "title": "Labs",
+    "section": "Lab Exams",
+    "text": "Lab Exams\n\nMid-term Lab Exam\nDate: Oct 25\nCoverage: Labs 1-4 (Processes, Threads, Locks)\n\n\nFinal Lab Exam\nDate: Nov 25\nCoverage: Labs 5-8 (Concurrency, Memory, File Systems, Performance)\n\n\nExam Format\n\nHands-on programming and debugging tasks\nOpen book and open notes\nDuration: 2 hours\nIndividual work only\n\n\n\n\n\n\n\nLab Environment\n\n\n\nAll labs are conducted in AB7/109 using the provided Ubuntu VMs. Make sure to save your work frequently and backup important files."
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "Due: Aug 27\nPractice with the process API, including fork(), exec(), and wait() system calls.\nFiles: Assignment 1 PDF\n\n\n\nDue: Nov 15\nImplement memory management techniques including malloc/free and virtual memory concepts.\nFiles: Assignment 2 PDF"
+  },
+  {
+    "objectID": "assignments.html#programming-assignments",
+    "href": "assignments.html#programming-assignments",
+    "title": "Assignments",
+    "section": "",
+    "text": "Due: Aug 27\nPractice with the process API, including fork(), exec(), and wait() system calls.\nFiles: Assignment 1 PDF\n\n\n\nDue: Nov 15\nImplement memory management techniques including malloc/free and virtual memory concepts.\nFiles: Assignment 2 PDF"
+  },
+  {
+    "objectID": "assignments.html#homework-assignments",
+    "href": "assignments.html#homework-assignments",
+    "title": "Assignments",
+    "section": "Homework Assignments",
+    "text": "Homework Assignments\n\nHomework 1: CPU Scheduling\nDue: Sep 4\nImplement and analyze different CPU scheduling algorithms.\nFiles: Homework 1 PDF\n\n\nHomework 2: Concurrency\nDue: Oct 22\nProgramming exercises on threads, locks, and synchronization.\nFiles: Homework 2 PDF"
+  },
+  {
+    "objectID": "assignments.html#assignment-guidelines",
+    "href": "assignments.html#assignment-guidelines",
+    "title": "Assignments",
+    "section": "Assignment Guidelines",
+    "text": "Assignment Guidelines\n\nSubmission Requirements\n\nAll code must compile and run on the provided Ubuntu VM\nInclude a README with compilation and execution instructions\nSubmit via the course management system\nLate submissions: 10% penalty per day\n\n\n\nGrading Criteria\n\nCorrectness (60%): Does the solution work as specified?\nCode Quality (25%): Clean, readable, well-commented code\nDocumentation (10%): Clear README and inline comments\nEfficiency (5%): Reasonable performance and resource usage\n\n\n\nAcademic Integrity\n\nIndividual assignments must be completed independently\nYou may discuss concepts but not share code\nCite any external resources or references used\nPlagiarism will result in course failure"
+  },
+  {
+    "objectID": "assignments.html#getting-help",
+    "href": "assignments.html#getting-help",
+    "title": "Assignments",
+    "section": "Getting Help",
+    "text": "Getting Help\n\nOffice Hours: Weekly sessions with instructor and TAs\nDiscussion Forum: Ask questions and help classmates\nLab Sessions: Hands-on assistance during lab hours\nEmail: Contact TAs for specific questions\n\n\n\n\n\n\n\nTips for Success\n\n\n\n\nStart assignments early to avoid last-minute issues\nTest your code thoroughly on the provided VM\nDocument your code as you write it\nAsk questions if you’re stuck - don’t wait until the deadline"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Date\nEvent\nDescription\n\n\n\n\nAug 6\nCourse Begins\nFirst lecture: Introduction to OS\n\n\nAug 23\nQuiz 1\nCovers processes and CPU scheduling\n\n\nAug 27\nAssignment 1 Due\nProcess API programming\n\n\nSep 13\nQuiz 2\nCovers memory management\n\n\nSep 27\nMid-semester Break\nNo classes\n\n\nOct 25\nMid-term Lab Exam\nPractical exam covering labs 1-4\n\n\nNov 5\nQuiz 3\nCovers concurrency and I/O\n\n\nNov 15\nAssignment 2 Due\nMemory management programming\n\n\nNov 19\nQuiz 4\nCovers file systems\n\n\nNov 20\nOS Zine Due\nCreative project submission\n\n\nNov 25\nFinal Lab Exam\nComprehensive lab exam\n\n\nDec 15\nProject Presentations\nFinal project demonstrations"
+  },
+  {
+    "objectID": "schedule.html#course-timeline",
+    "href": "schedule.html#course-timeline",
+    "title": "Schedule",
+    "section": "",
+    "text": "Date\nEvent\nDescription\n\n\n\n\nAug 6\nCourse Begins\nFirst lecture: Introduction to OS\n\n\nAug 23\nQuiz 1\nCovers processes and CPU scheduling\n\n\nAug 27\nAssignment 1 Due\nProcess API programming\n\n\nSep 13\nQuiz 2\nCovers memory management\n\n\nSep 27\nMid-semester Break\nNo classes\n\n\nOct 25\nMid-term Lab Exam\nPractical exam covering labs 1-4\n\n\nNov 5\nQuiz 3\nCovers concurrency and I/O\n\n\nNov 15\nAssignment 2 Due\nMemory management programming\n\n\nNov 19\nQuiz 4\nCovers file systems\n\n\nNov 20\nOS Zine Due\nCreative project submission\n\n\nNov 25\nFinal Lab Exam\nComprehensive lab exam\n\n\nDec 15\nProject Presentations\nFinal project demonstrations"
+  },
+  {
+    "objectID": "schedule.html#weekly-schedule",
+    "href": "schedule.html#weekly-schedule",
+    "title": "Schedule",
+    "section": "Weekly Schedule",
+    "text": "Weekly Schedule\n\nLectures\n\nTuesday: 11:00 AM - 12:00 PM (AB7/102)\nThursday: 11:00 AM - 12:00 PM (AB7/102)\nFriday: 11:00 AM - 12:00 PM (AB7/102)\n\n\n\nLabs\n\nMonday: 10:00 AM - 12:00 PM (AB7/109)\n\n\n\nOffice Hours\n\nInstructor: Tuesday & Thursday 2:00 PM - 3:00 PM\nTAs: Monday & Wednesday 3:00 PM - 4:00 PM"
+  },
+  {
+    "objectID": "schedule.html#course-phases",
+    "href": "schedule.html#course-phases",
+    "title": "Schedule",
+    "section": "Course Phases",
+    "text": "Course Phases\n\nPhase 1: Foundations (Weeks 1-6)\nTopics: Introduction, Processes, CPU Scheduling, Memory Basics\nKey Deliverables: - Quiz 1 (Aug 23) - Assignment 1 (Aug 27) - Lab exercises 1-2\n\n\nPhase 2: Memory Management (Weeks 7-10)\nTopics: Address Translation, Paging, Swapping, Virtual Memory\nKey Deliverables: - Quiz 2 (Sep 13) - Lab exercises 3-4 - Project proposal\n\n\nPhase 3: Concurrency (Weeks 11-14)\nTopics: Threads, Locks, Synchronization, Deadlocks\nKey Deliverables: - Mid-term Lab Exam (Oct 25) - Quiz 3 (Nov 5) - Lab exercises 5-6\n\n\nPhase 4: I/O and File Systems (Weeks 15-16)\nTopics: I/O Systems, Hard Drives, RAID, File Systems\nKey Deliverables: - Assignment 2 (Nov 15) - Quiz 4 (Nov 19) - OS Zine (Nov 20) - Final Lab Exam (Nov 25) - Project presentations (Dec 15)"
+  },
+  {
+    "objectID": "schedule.html#exam-schedule",
+    "href": "schedule.html#exam-schedule",
+    "title": "Schedule",
+    "section": "Exam Schedule",
+    "text": "Exam Schedule\n\nQuizzes (40% total)\n\nQuiz 1: Aug 23 - Processes, CPU Scheduling\nQuiz 2: Sep 13 - Memory Management\nQuiz 3: Nov 5 - Concurrency, I/O\nQuiz 4: Nov 19 - File Systems\n\n\n\nLab Exams (20% total)\n\nMid-term Lab Exam: Oct 25 - Hands-on programming\nFinal Lab Exam: Nov 25 - Comprehensive practical exam\n\n\n\nFinal Exam (10%)\n\nDate: TBD during exam period\nDuration: 3 hours\nFormat: Written exam covering all course material"
+  },
+  {
+    "objectID": "schedule.html#assignment-timeline",
+    "href": "schedule.html#assignment-timeline",
+    "title": "Schedule",
+    "section": "Assignment Timeline",
+    "text": "Assignment Timeline\n\nProgramming Assignments (8% total)\n\nAssignment 1: Process API (Due Aug 27)\nAssignment 2: Memory Management (Due Nov 15)\n\n\n\nCourse Project (20%)\n\nTeam Formation: Week 3\nProject Proposal: Week 6\nMid-term Review: Week 10\nFinal Presentation: Week 15\n\n\n\nOS Zine (2%)\n\nAssignment: Week 12\nDue Date: Nov 20\nFormat: Creative technical communication"
+  },
+  {
+    "objectID": "schedule.html#holiday-schedule",
+    "href": "schedule.html#holiday-schedule",
+    "title": "Schedule",
+    "section": "Holiday Schedule",
+    "text": "Holiday Schedule\n\nHolidays and Breaks\n\nAug 15: Independence Day (No class)\nSep 27 - Oct 14: Mid-semester break\nOct 18: No class (Faculty meeting)\nNov 12-13: Diwali break (No classes)\n\n\n\nMake-up Classes\n\nAdditional sessions may be scheduled if needed\nAnnouncements will be made in advance\nCheck course website for updates"
+  },
+  {
+    "objectID": "schedule.html#study-schedule-recommendations",
+    "href": "schedule.html#study-schedule-recommendations",
+    "title": "Schedule",
+    "section": "Study Schedule Recommendations",
+    "text": "Study Schedule Recommendations\n\nWeekly Study Plan\n\nMonday: Review previous week’s lectures\nTuesday: Preview lecture material\nWednesday: Work on assignments/projects\nThursday: Attend lecture and review notes\nFriday: Attend lecture and practice problems\nWeekend: Complete lab exercises and reading\n\n\n\nExam Preparation\n\n3 weeks before: Start reviewing all material\n2 weeks before: Practice problems and past exams\n1 week before: Form study groups and clarify doubts\nDay before: Light review and rest well\n\n\n\n\n\n\n\nImportant Notes\n\n\n\n\nAll dates are subject to change with advance notice\nCheck the course website regularly for updates\nInform instructor in advance about any conflicts\nLate submissions have penalties as per course policy"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Operating Systems: Three Easy Pieces\nby Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau\nFree online textbook covering all major operating system concepts with clear explanations and practical examples.\n\n\n\nUbuntu VirtualBox VM\nPre-configured Ubuntu virtual machine with all necessary tools and libraries for course assignments.\n\n\n\nGitHub Repository\nComplete source code for all course materials, including: - Lecture examples and demonstrations - Lab exercises and solutions - Assignment starter code - Useful utilities and tools\n\n\n\nCode Examples\nLocal directory containing all code used in lectures and labs: - Process API examples (fork, exec, wait) - CPU scheduling simulations - Memory management programs - Threading and synchronization examples - I/O and file system utilities"
+  },
+  {
+    "objectID": "resources.html#course-materials",
+    "href": "resources.html#course-materials",
+    "title": "Resources",
+    "section": "",
+    "text": "Operating Systems: Three Easy Pieces\nby Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau\nFree online textbook covering all major operating system concepts with clear explanations and practical examples.\n\n\n\nUbuntu VirtualBox VM\nPre-configured Ubuntu virtual machine with all necessary tools and libraries for course assignments.\n\n\n\nGitHub Repository\nComplete source code for all course materials, including: - Lecture examples and demonstrations - Lab exercises and solutions - Assignment starter code - Useful utilities and tools\n\n\n\nCode Examples\nLocal directory containing all code used in lectures and labs: - Process API examples (fork, exec, wait) - CPU scheduling simulations - Memory management programs - Threading and synchronization examples - I/O and file system utilities"
+  },
+  {
+    "objectID": "resources.html#video-lectures",
+    "href": "resources.html#video-lectures",
+    "title": "Resources",
+    "section": "Video Lectures",
+    "text": "Video Lectures\n\nComplete Course Playlist\nYouTube Playlist\nAll 35+ lectures covering the complete operating systems curriculum.\n\n\nSupplementary Videos\n\nLinux Memory Management - Deep dive into Linux memory subsystem\nChrome Process Model - Understanding multi-process architecture"
+  },
+  {
+    "objectID": "resources.html#additional-reading",
+    "href": "resources.html#additional-reading",
+    "title": "Resources",
+    "section": "Additional Reading",
+    "text": "Additional Reading\n\nClassic Papers\n\nThe Unix Time-Sharing System - Ritchie & Thompson\nThe Design of the UNIX Operating System - Maurice Bach\nModern Operating Systems - Andrew Tanenbaum\n\n\n\nOnline Resources\n\nOSDev Wiki - Comprehensive OS development resource\nLinux Kernel Documentation - Official Linux kernel docs\nxv6 Operating System - Simple Unix-like teaching OS"
+  },
+  {
+    "objectID": "resources.html#programming-resources",
+    "href": "resources.html#programming-resources",
+    "title": "Resources",
+    "section": "Programming Resources",
+    "text": "Programming Resources\n\nC Programming\n\nThe C Programming Language - K&R\nC Reference - Complete C language reference\nGDB Tutorial - Debugging with GDB\n\n\n\nSystem Programming\n\nAdvanced Programming in the UNIX Environment - Stevens & Rago\nLinux System Programming - Robert Love\nThe Linux Programming Interface - Michael Kerrisk"
+  },
+  {
+    "objectID": "resources.html#tools-and-utilities",
+    "href": "resources.html#tools-and-utilities",
+    "title": "Resources",
+    "section": "Tools and Utilities",
+    "text": "Tools and Utilities\n\nDevelopment Tools\n\nGCC: GNU Compiler Collection\nGDB: GNU Debugger\nValgrind: Memory debugging and profiling\nMake: Build automation tool\n\n\n\nSystem Monitoring\n\nhtop: Interactive process viewer\nstrace: System call tracer\nperf: Performance analysis tool\ntop: System resource monitor\n\n\n\nVirtualization\n\nVirtualBox: Desktop virtualization\nQEMU: Machine emulator and virtualizer\nDocker: Container platform"
+  },
+  {
+    "objectID": "resources.html#project-ideas",
+    "href": "resources.html#project-ideas",
+    "title": "Resources",
+    "section": "Project Ideas",
+    "text": "Project Ideas\n\nOpen Source Projects\n\nxv6 - Simple Unix-like OS for teaching\nMinix - Microkernel-based OS\nseL4 - High-assurance microkernel\n\n\n\nPractice Platforms\n\nLeetCode System Design - Concurrency problems\nHackerRank - Algorithm practice\nCodeforces - Competitive programming"
+  },
+  {
+    "objectID": "resources.html#community-and-support",
+    "href": "resources.html#community-and-support",
+    "title": "Resources",
+    "section": "Community and Support",
+    "text": "Community and Support\n\nForums and Communities\n\nStack Overflow - Programming Q&A\nReddit r/AskComputerScience - Academic discussions\nUnix Stack Exchange - Unix/Linux specific questions\n\n\n\nCourse Support\n\nOffice Hours: Weekly sessions with instructor and TAs\nDiscussion Forum: Course-specific Q&A platform\nEmail Support: Direct contact with teaching staff\n\n\n\n\n\n\n\nStudy Tips\n\n\n\n\nRead the textbook chapters before lectures\nPractice coding regularly, not just before assignments\nJoin study groups and discuss concepts with peers\nUse multiple resources to understand difficult topics"
+  }
+]

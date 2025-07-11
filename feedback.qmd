@@ -1,10 +1,36 @@
 ---
-title: "Feedback"
+title: "Student Feedback"
 subtitle: "Continuous improvement is better than delayed perfection"
+format:
+  html:
+    css: custom.scss
 ---
 
-> The course policy was very nice. It lifted a lot of pressure by reducing the weightage of written exams while maintaining the rigor through assignments.
+## Student Testimonials
 
-> I never thought I can learn so many things from one course. I personally am a fan of this course.
+::: {.feedback-quote}
+The course policy was very nice. It lifted a lot of pressure by reducing the weightage of written exams while maintaining the rigor through assignments.
+:::
 
-> The overall content and the planning of the course was the best being offered in the campus The assignments and the project topics were also very much useful
+::: {.feedback-quote}
+I never thought I can learn so many things from one course. I personally am a fan of this course.
+:::
+
+::: {.feedback-quote}
+The overall content and the planning of the course was the best being offered in the campus. The assignments and the project topics were also very much useful.
+:::
+
+## Course Strengths
+
+### Teaching Methodology
+Students consistently praise the hands-on approach, with recorded lectures providing flexibility for review and self-paced learning.
+
+### Assessment Strategy
+The balanced assessment approach reduces exam pressure while maintaining academic rigor through practical assignments.
+
+### Course Content
+Students appreciate the comprehensive coverage of operating systems concepts with modern, relevant examples.
+
+## Share Your Feedback
+
+We welcome feedback from all students to help us improve the course experience. Contact the instructor directly or use the anonymous feedback system for suggestions.

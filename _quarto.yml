@@ -10,12 +10,20 @@ website:
     left:
       - text: "Course Home"
         href: index.qmd
-      - text: "Feedback" 
-        href: feedback.qmd
       - text: "Lectures"
         href: lectures.qmd
+      - text: "Labs"
+        href: labs.qmd
+      - text: "Assignments"
+        href: assignments.qmd
       - text: "Projects"
         href: projects.qmd
+      - text: "Schedule"
+        href: schedule.qmd
+      - text: "Resources"
+        href: resources.qmd
+      - text: "Feedback" 
+        href: feedback.qmd
     right:
       - text: "Instructor Webpage"
         href: "https://nipunbatra.github.io/"

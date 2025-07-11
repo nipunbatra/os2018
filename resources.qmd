@@ -1,0 +1,125 @@
+---
+title: "Resources"
+subtitle: "Course materials and helpful links"
+format:
+  html:
+    css: custom.scss
+---
+
+## Course Materials
+
+### Textbook
+[**Operating Systems: Three Easy Pieces**](http://pages.cs.wisc.edu/~remzi/OSTEP/)  
+by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
+
+Free online textbook covering all major operating system concepts with clear explanations and practical examples.
+
+### Development Environment
+[**Ubuntu VirtualBox VM**](https://drive.google.com/file/d/1jZVQRuomuYsuK5dkTyuVMxV4oNLFX8Hs/view)
+
+Pre-configured Ubuntu virtual machine with all necessary tools and libraries for course assignments.
+
+### Course Code Repository
+[**GitHub Repository**](https://github.com/nipunbatra/os2018)
+
+Complete source code for all course materials, including:
+- Lecture examples and demonstrations
+- Lab exercises and solutions
+- Assignment starter code
+- Useful utilities and tools
+
+### Local Code Examples
+[**Code Examples**](code/)
+
+Local directory containing all code used in lectures and labs:
+- Process API examples (fork, exec, wait)
+- CPU scheduling simulations
+- Memory management programs
+- Threading and synchronization examples
+- I/O and file system utilities
+
+## Video Lectures
+
+### Complete Course Playlist
+[**YouTube Playlist**](https://www.youtube.com/playlist?list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5)
+
+All 35+ lectures covering the complete operating systems curriculum.
+
+### Supplementary Videos
+- [Linux Memory Management](https://www.youtube.com/watch?v=7aONIVSXiJ8) - Deep dive into Linux memory subsystem
+- [Chrome Process Model](https://www.youtube.com/watch?v=29e0CtgXZSI) - Understanding multi-process architecture
+
+## Additional Reading
+
+### Classic Papers
+- [The Unix Time-Sharing System](https://people.eecs.berkeley.edu/~brewer/cs262/unix.pdf) - Ritchie & Thompson
+- [The Design of the UNIX Operating System](https://www.pearson.com/store/p/design-of-the-unix-operating-system-the/P100000312857) - Maurice Bach
+- [Modern Operating Systems](https://www.pearson.com/store/p/modern-operating-systems/P100002443471) - Andrew Tanenbaum
+
+### Online Resources
+- [OSDev Wiki](https://wiki.osdev.org/) - Comprehensive OS development resource
+- [Linux Kernel Documentation](https://www.kernel.org/doc/) - Official Linux kernel docs
+- [xv6 Operating System](https://pdos.csail.mit.edu/6.828/2020/xv6.html) - Simple Unix-like teaching OS
+
+## Programming Resources
+
+### C Programming
+- [The C Programming Language](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628) - K&R
+- [C Reference](https://en.cppreference.com/w/c) - Complete C language reference
+- [GDB Tutorial](https://www.gnu.org/software/gdb/documentation/) - Debugging with GDB
+
+### System Programming
+- [Advanced Programming in the UNIX Environment](https://www.amazon.com/Advanced-Programming-UNIX-Environment-3rd/dp/0321637739) - Stevens & Rago
+- [Linux System Programming](https://www.amazon.com/Linux-System-Programming-Robert-Love/dp/1449339530) - Robert Love
+- [The Linux Programming Interface](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200) - Michael Kerrisk
+
+## Tools and Utilities
+
+### Development Tools
+- **GCC**: GNU Compiler Collection
+- **GDB**: GNU Debugger
+- **Valgrind**: Memory debugging and profiling
+- **Make**: Build automation tool
+
+### System Monitoring
+- **htop**: Interactive process viewer
+- **strace**: System call tracer
+- **perf**: Performance analysis tool
+- **top**: System resource monitor
+
+### Virtualization
+- **VirtualBox**: Desktop virtualization
+- **QEMU**: Machine emulator and virtualizer
+- **Docker**: Container platform
+
+## Project Ideas
+
+### Open Source Projects
+- [xv6](https://github.com/mit-pdos/xv6-public) - Simple Unix-like OS for teaching
+- [Minix](https://github.com/Stichting-MINIX-Research-Foundation/minix) - Microkernel-based OS
+- [seL4](https://github.com/seL4/seL4) - High-assurance microkernel
+
+### Practice Platforms
+- [LeetCode System Design](https://leetcode.com/problemset/concurrency/) - Concurrency problems
+- [HackerRank](https://www.hackerrank.com/domains/algorithms) - Algorithm practice
+- [Codeforces](https://codeforces.com/) - Competitive programming
+
+## Community and Support
+
+### Forums and Communities
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/operating-system) - Programming Q&A
+- [Reddit r/AskComputerScience](https://www.reddit.com/r/AskComputerScience/) - Academic discussions
+- [Unix Stack Exchange](https://unix.stackexchange.com/) - Unix/Linux specific questions
+
+### Course Support
+- **Office Hours**: Weekly sessions with instructor and TAs
+- **Discussion Forum**: Course-specific Q&A platform
+- **Email Support**: Direct contact with teaching staff
+
+::: {.callout-tip}
+### Study Tips
+- Read the textbook chapters before lectures
+- Practice coding regularly, not just before assignments
+- Join study groups and discuss concepts with peers
+- Use multiple resources to understand difficult topics
+:::

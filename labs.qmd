@@ -1,0 +1,114 @@
+---
+title: "Labs"
+subtitle: "Hands-on exercises and practical sessions"
+format:
+  html:
+    css: custom.scss
+---
+
+## Lab Schedule
+
+### Lab 1: Process Commands
+**Date: Aug 12**  
+**Topic:** Process commands (top, ps, htop)
+
+Learn to use Unix process management tools and understand process states.
+
+**Materials:** [Lab 1 PDF](labs/lab-1.pdf)
+
+### Lab 2: Thread Introduction
+**Date: Sep 25**  
+**Topic:** Thread Introduction + Chrome Process Model
+
+Introduction to threading concepts and understanding Chrome's multi-process architecture.
+
+**Materials:** [Lab 2 Instructions](labs/19-Sep.md)
+
+### Lab 3: Thread API + Locks
+**Date: Oct 16**  
+**Topic:** Thread API and Basic Locks
+
+Practice with pthread API and implement basic locking mechanisms.
+
+**Materials:** [Lab 3 Instructions](labs/26-Sep.md)
+
+### Lab 4: Advanced Locks
+**Date: Oct 22**  
+**Topic:** Locks Implementation
+
+Implement and test different types of locks and synchronization primitives.
+
+**Materials:** [Lab 4 Instructions](labs/17-Oct.md)
+
+### Lab 5: Concurrent Data Structures
+**Date: Oct 30**  
+**Topic:** Concurrent Data Structures
+
+Design and implement thread-safe data structures.
+
+**Materials:** [Lab 5 Instructions](labs/24-Oct.md)
+
+### Lab 6: Memory Management
+**Date: Nov 7**  
+**Topic:** Memory allocation and management
+
+Implement memory allocators and understand virtual memory concepts.
+
+**Materials:** [Lab 6 Instructions](labs/7-Nov.md)
+
+### Lab 7: File Systems
+**Date: Nov 14**  
+**Topic:** File system implementation
+
+Explore file system internals and implement basic file operations.
+
+**Materials:** [Lab 7 Instructions](labs/14-Nov.md)
+
+### Lab 8: System Performance
+**Date: Dec 12**  
+**Topic:** System performance analysis
+
+Use profiling tools to analyze and optimize system performance.
+
+**Materials:** [Lab 8 Instructions](labs/12-Sep.md)
+
+## Lab Guidelines
+
+### Preparation
+- Read the lab instructions before attending
+- Set up your development environment
+- Review related lecture materials
+- Come with specific questions
+
+### During Lab
+- Work collaboratively but submit individual reports
+- Ask TAs for help when needed
+- Document your findings and observations
+- Test your solutions thoroughly
+
+### Lab Reports
+- Submit a brief report (1-2 pages) after each lab
+- Include screenshots, code snippets, and analysis
+- Answer all questions posed in the lab instructions
+- Submit within one week of the lab session
+
+## Lab Exams
+
+### Mid-term Lab Exam
+**Date: Oct 25**  
+**Coverage:** Labs 1-4 (Processes, Threads, Locks)
+
+### Final Lab Exam
+**Date: Nov 25**  
+**Coverage:** Labs 5-8 (Concurrency, Memory, File Systems, Performance)
+
+### Exam Format
+- Hands-on programming and debugging tasks
+- Open book and open notes
+- Duration: 2 hours
+- Individual work only
+
+::: {.callout-note}
+### Lab Environment
+All labs are conducted in AB7/109 using the provided Ubuntu VMs. Make sure to save your work frequently and backup important files.
+:::
