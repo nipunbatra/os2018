@@ -1,50 +1,24 @@
-# Operating Systems 2018 Course Website
+# CS 301 · Operating Systems (2018)
 
-This is the course website for CS 301 - Operating Systems, taught by Prof. Nipun Batra at IIT Gandhinagar.
+Course website for CS 301 Operating Systems at IIT Gandhinagar, Semester I 2018–19, taught by Prof. Nipun Batra:
+<https://nipunbatra.github.io/os2018/>
 
-## About
+The site is a [Quarto](https://quarto.org) website in the same design as
+[ES 667 Deep Learning](https://nipunbatra.github.io/dl-2026/). GitHub Actions
+(`.github/workflows/quarto-publish.yml`) renders it into `_site/` and publishes it to GitHub Pages on every push to
+`master`.
 
-This website contains:
-- Course syllabus and logistics
-- Lecture schedule and materials
-- Lab assignments and resources
-- Student feedback and testimonials
-- Project information
+| File | Contents |
+|---|---|
+| `index.qmd` | Home: course facts, course record, module overview, questions, references, teaching assistants |
+| `schedule.qmd` | Lectures: one row per lecture with slides and class recording |
+| `assessment.qmd`, `_dates.qmd` | Grading, every dated event, quizzes, homework and the project |
+| `assignments.qmd` | Homework sets and submission rules |
+| `labs.qmd`, `labs/*.md` | Lab sheets |
+| `resources.qmd`, `feedback.qmd`, `code/index.qmd` | Resources, student feedback, code used in class |
+| `lectures/`, `hw/`, `exams/`, `labs/`, `code/` | Slides, homework, quiz papers, lab sheets and code |
+| `lectures.qmd`, `projects.qmd`, `*/index.qmd` | Redirects from old URLs |
+| `styles.scss`, `course.scss` | Shared theme (`styles.scss` is identical to dl-2026) and small additions |
+| `rail.html`, `course-theme.html`, `course-tools.html` | Side rail, light and dark switch, footer, copy-link buttons and date handling |
 
-## Technology
-
-This site is built with [Quarto](https://quarto.org) and automatically deployed to GitHub Pages using GitHub Actions.
-
-## Local Development
-
-To preview the site locally:
-
-```bash
-quarto preview
-```
-
-To render the site:
-
-```bash
-quarto render
-```
-
-## Deployment
-
-The site is automatically deployed to GitHub Pages when changes are pushed to the master branch. The deployment is handled by the GitHub Actions workflow in `.github/workflows/quarto-publish.yml`.
-
-## Course Information
-
-- **Instructor**: Nipun Batra (nipun.batra@iitgn.ac.in)
-- **Teaching Assistants**: Rishiraj Adhikary, Varun Gohil, Shreyas Singh
-- **Textbook**: [OS: Three Easy Steps](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-
-## Links
-
-- [Course Project Ideas](https://docs.google.com/spreadsheets/d/1eVVmBrCTXHa6XhfewG2S9_if11Ija0s_cNMBp5NMbww/edit?usp=sharing)
-- [Instructor Webpage](https://nipunbatra.github.io/)
-- [Ubuntu VirtualBox VM](https://drive.google.com/file/d/1jZVQRuomuYsuK5dkTyuVMxV4oNLFX8Hs/view)
-
-## Migration from Jekyll
-
-This site was originally built with Jekyll and has been migrated to Quarto for better maintainability and modern features.
+Preview locally with `quarto preview`.

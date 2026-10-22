@@ -1,0 +1,10 @@
+---
+title: "Student feedback"
+include-in-header:
+  text: |
+    <meta http-equiv="refresh" content="0; url=../feedback.html">
+    <link rel="canonical" href="https://nipunbatra.github.io/os2018/feedback.html">
+    <meta name="robots" content="noindex">
+---
+
+This page has moved: [go to Student feedback](/feedback.html).

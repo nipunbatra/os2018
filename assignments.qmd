@@ -1,74 +1,31 @@
 ---
-title: "Assignments"
-subtitle: "Programming assignments and homework"
-format:
-  html:
-    css: custom.scss
+title: "Homework"
 ---
 
-## Programming Assignments
+Four individual homework sets, each a PDF with its LaTeX source in [`hw/`](https://github.com/nipunbatra/os2018/tree/master/hw). Deadlines are at noon IST.
 
-### Assignment 1: Process API
-**Due: Aug 27**
+```{=html}
+<table class="t" data-quarto-disable-processing="true">
+<thead><tr><th>Homework</th><th>Questions</th><th>Due</th></tr></thead>
+<tbody>
+<tr><td><a href="hw/1.pdf">Homework 1</a></td><td>Creating a user on the course VM; a fork bomb, and capping the number of processes per user; command-line arguments in a child process; a weighted scheduling metric for SJF, LJF, STCF and round robin; the default Linux scheduler.</td><td>17 Aug, noon</td></tr>
+<tr><td><a href="hw/2.pdf">Homework 2</a></td><td>FIFO, random, LRU and optimal page replacement on a 90–10 workload; virtual-to-physical address translation; a memory-user program (OSTEP chapter 13, questions 3 and 4).</td><td>17 Sep, noon</td></tr>
+<tr><td><a href="hw/3.pdf">Homework 3</a></td><td>A concurrent B-tree and its scaling with threads; a readers–writer lock (bonus); dining philosophers with condition variables; comparing a dining-philosophers solution. 6 marks, up to 8 with the bonus.</td><td>6 Nov, noon (postponed from 5 Nov)</td></tr>
+<tr><td><a href="hw/4.pdf">Homework 4</a></td><td>Distributions of file counts and sizes; tracking inodes over time; OSTEP chapter 37, question 4 and chapter 38, question 5; a read-only mount. 6 marks.</td><td>27 Nov, noon</td></tr>
+</tbody></table>
+```
 
-Practice with the process API, including fork(), exec(), and wait() system calls.
+## Submission rules
 
-**Files:** [Assignment 1 PDF](hw/1.pdf)
+These rules are printed on every homework sheet.
 
-### Assignment 2: Memory Management
-**Due: Nov 15**
+- Deadlines are hard: the upload form closes at noon and there are no extensions.
+- Type the answers, create a PDF and upload it on the form. Only PDF files are accepted.
+- Name the file `{branch}_{roll_number}_{name}.pdf`.
+- Put all code and Jupyter notebooks in **secret** [GitHub gists](https://gist.github.com/) and link them in the PDF.
+- Cheating and plagiarism are not tolerated.
+- Cite all pertinent references in IEEE format.
+- The least count of grading is 0.5 marks.
+- The course VM is linked from the [home page](index.qmd).
 
-Implement memory management techniques including malloc/free and virtual memory concepts.
-
-**Files:** [Assignment 2 PDF](hw/2.pdf)
-
-## Homework Assignments
-
-### Homework 1: CPU Scheduling
-**Due: Sep 4**
-
-Implement and analyze different CPU scheduling algorithms.
-
-**Files:** [Homework 1 PDF](hw/3.pdf)
-
-### Homework 2: Concurrency
-**Due: Oct 22**
-
-Programming exercises on threads, locks, and synchronization.
-
-**Files:** [Homework 2 PDF](hw/4.pdf)
-
-## Assignment Guidelines
-
-### Submission Requirements
-- All code must compile and run on the provided Ubuntu VM
-- Include a README with compilation and execution instructions
-- Submit via the course management system
-- Late submissions: 10% penalty per day
-
-### Grading Criteria
-- **Correctness (60%)**: Does the solution work as specified?
-- **Code Quality (25%)**: Clean, readable, well-commented code
-- **Documentation (10%)**: Clear README and inline comments
-- **Efficiency (5%)**: Reasonable performance and resource usage
-
-### Academic Integrity
-- Individual assignments must be completed independently
-- You may discuss concepts but not share code
-- Cite any external resources or references used
-- Plagiarism will result in course failure
-
-## Getting Help
-
-- **Office Hours**: Weekly sessions with instructor and TAs
-- **Discussion Forum**: Ask questions and help classmates
-- **Lab Sessions**: Hands-on assistance during lab hours
-- **Email**: Contact TAs for specific questions
-
-::: {.callout-tip}
-### Tips for Success
-- Start assignments early to avoid last-minute issues
-- Test your code thoroughly on the provided VM
-- Document your code as you write it
-- Ask questions if you're stuck - don't wait until the deadline
-:::
+The sample code for random page replacement mentioned in Homework 2 is [`code/replacement-random-plot.py`](code/replacement-random-plot.py).

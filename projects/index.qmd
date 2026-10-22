@@ -1,0 +1,10 @@
+---
+title: "Project"
+include-in-header:
+  text: |
+    <meta http-equiv="refresh" content="0; url=../assessment.html#project">
+    <link rel="canonical" href="https://nipunbatra.github.io/os2018/assessment.html#project">
+    <meta name="robots" content="noindex">
+---
+
+This page has moved: [go to Project](/assessment.html#project).

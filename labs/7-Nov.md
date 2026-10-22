@@ -1,3 +1,9 @@
+---
+title: "Lab: threads in Python"
+---
+
+Lab session of 7 November 2018. [All labs](../labs.qmd)
+
 1. [Multi-threading in Python](https://www.geeksforgeeks.org/multithreading-python-set-1/)
 2. [Use locks in Python](https://www.geeksforgeeks.org/multithreading-in-python-set-2-synchronization/)
 3. [Implement simple multi-threaded download manager in Python](https://www.geeksforgeeks.org/simple-multithreaded-download-manager-in-python/)

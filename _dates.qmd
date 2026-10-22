@@ -1,0 +1,29 @@
+<!-- Course dates, shared by Assessment. Write dates as "08 Oct 18" or "08 Oct 18, 12:00 pm" (IST).
+     Only dates stated in the 2018 course material (slides, homework and lab sheets) are listed. -->
+
+::: {.dates}
+
+| Date | Event |
+|---|---|
+| 02 Aug 18 | First lecture |
+| 17 Aug 18, 12:00 pm | [Homework 1 due](hw/1.pdf) |
+| 21 Aug 18 | **Quiz 1** |
+| 12 Sep 18 | [Lab: kernel modules, strace and swapping](labs/12-Sep.html) |
+| 13 Sep 18 | **Quiz 2** |
+| 15 Sep 18 | [Lab: kernel modules, strace and swapping](labs/15-Sep.html) |
+| 17 Sep 18, 12:00 pm | [Homework 2 due](hw/2.pdf) |
+| 19 Sep 18 | [Lab: threads and the Chrome process model](labs/19-Sep.html) |
+| 26 Sep 18 | [Lab: the pthreads API](labs/26-Sep.html) |
+| 17 Oct 18 | [Lab: multithreading and locks](labs/17-Oct.html) |
+| 24 Oct 18 | [Lab: lock-based data structures](labs/24-Oct.html) |
+| 06 Nov 18, 12:00 pm | [Homework 3 due](hw/3.pdf) (postponed from 5 Nov) |
+| 07 Nov 18 | [Lab: threads and processes in Python](labs/7-Nov.html) |
+| 12 Nov 18 | **Quiz 3** (date announced as tentative) |
+| 12 Nov 18 | Project grading, second round |
+| 14 Nov 18 | [Lab: files and directories](labs/14-Nov.html) |
+| 16 Nov 18 | Project grading, second round |
+| 19 Nov 18 | Project grading, final round |
+| 23 Nov 18 | Project grading, final round |
+| 27 Nov 18, 12:00 pm | [Homework 4 due](hw/4.pdf) |
+
+:::

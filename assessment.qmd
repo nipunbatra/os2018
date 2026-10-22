@@ -1,0 +1,77 @@
+---
+title: "Assessment"
+body-classes: dl wide
+---
+
+```{=html}
+<p class="lede">Grading, quizzes, homework, the project and every dated event of the 2018 offering in one place. All times are IST; homework deadlines are at noon and are hard.</p>
+```
+
+::: {.two .rule-top}
+
+## Dates {#dates}
+
+{{< include _dates.qmd >}}
+
+## Grading {#grading}
+
+Weights as announced in class in 2018. The full breakdown was published on the original course page and is not reproduced here.
+
+```{=html}
+<table class="t" data-quarto-disable-processing="true">
+<thead><tr><th>Component</th><th>Weight</th><th>How</th></tr></thead>
+<tbody>
+<tr><th>Quizzes</th><td class="big">10%</td><td>Each quiz is worth 10%. See <a href="#quizzes">Quizzes</a>.</td></tr>
+<tr><th>Project</th><td class="big">8%</td><td>Raised from 5% to 8% during the semester, with the 3% taken from homework. See <a href="#project">Project</a>.</td></tr>
+<tr><th>Homework</th><td class="big">–</td><td>Four individual homework sets, typed and submitted as a PDF. See <a href="assignments.html">Homework</a>.</td></tr>
+<tr><th>Labs</th><td class="big">–</td><td>Lab sheets and a lab quiz. See <a href="labs.html">Labs</a>.</td></tr>
+</tbody></table>
+```
+
+Homework is graded with a least count of 0.5 marks. Plagiarism is not tolerated, and all references must be cited in IEEE format.
+
+:::
+
+::: {.two .rule-top}
+
+## Quizzes {#quizzes}
+
+```{=html}
+<table class="t" data-quarto-disable-processing="true">
+<thead><tr><th>Quiz</th><th>Date</th><th>Paper</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>21&nbsp;Aug</td><td><a href="exams/quiz-1.pdf">Quiz 1</a> (PDF, 25 marks). Syllabus: from the start of the course up to and including MLFQ.</td></tr>
+<tr><td>2</td><td>13&nbsp;Sep</td><td><a href="exams/quiz-2.pdf">Quiz 2</a> (PDF, 25 marks)</td></tr>
+<tr><td>3</td><td>12&nbsp;Nov (tentative)</td><td><a href="exams/quiz-3.pdf">Quiz 3</a> (PDF, 12 marks, 60 minutes)</td></tr>
+</tbody></table>
+```
+
+Two further quiz papers were linked from the earlier version of this site: [Quiz 1](https://docs.google.com/document/d/1LFQU-Gy4vzNXRDF6hlY8QAKArlLNFBO9wsq8UcWQKQI/edit?usp=sharing) and [Quiz 2](https://docs.google.com/document/d/1RWaJ51t04Meg5jnpFr1BHXCpK5ZCJpu8VlnigL6XoXY/edit) (Google Docs).
+
+## Homework {#homework}
+
+```{=html}
+<table class="t" data-quarto-disable-processing="true">
+<thead><tr><th>Homework</th><th>Topics</th><th>Due</th></tr></thead>
+<tbody>
+<tr><td><a href="hw/1.pdf">1</a></td><td>Users, fork bombs and process limits, the process API, scheduling policies</td><td>17&nbsp;Aug</td></tr>
+<tr><td><a href="hw/2.pdf">2</a></td><td>Page replacement, address translation, memory use</td><td>17&nbsp;Sep</td></tr>
+<tr><td><a href="hw/3.pdf">3</a></td><td>A concurrent B-tree, readers–writer locks, dining philosophers</td><td>6&nbsp;Nov</td></tr>
+<tr><td><a href="hw/4.pdf">4</a></td><td>File-system measurements, disks and RAID, read-only mounts</td><td>27&nbsp;Nov</td></tr>
+</tbody></table>
+```
+
+Details and submission rules are on the [Homework](assignments.qmd) page.
+
+:::
+
+::: {.rule-top}
+
+## Project {#project}
+
+- Project ideas are collected in the [course project ideas spreadsheet](https://docs.google.com/spreadsheets/d/1eVVmBrCTXHa6XhfewG2S9_if11Ija0s_cNMBp5NMbww/edit?usp=sharing).
+- Projects are shown in class as a demo or a video.
+- The project counts for 8% (raised from 5% during the semester).
+- Projects were graded in rounds: the second round on 12 and 16 November, the third and final round on 19 and 23 November.
+
+:::

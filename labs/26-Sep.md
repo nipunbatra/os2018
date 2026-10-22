@@ -1,8 +1,12 @@
-### Lab assignment for 26th Sept 2018 for CSE 301
+---
+title: "Lab: the pthreads API"
+---
 
-Reference: https://computing.llnl.gov/tutorials/pthreads/
+Lab assignment for 26 September 2018, CSE 301. [All labs](../labs.qmd)
 
-*NB: The bonus questions will not be discussed for the whole class. Some of them are open ended too. Every few minutes the instructor will solve the questions for the whole class. You can also find the solutions here.*
+Reference: <https://computing.llnl.gov/tutorials/pthreads/>
+
+*NB: The bonus questions will not be discussed for the whole class. Some of them are open ended too. Every few minutes the instructor will solve the questions for the whole class. You can also find the solutions [here](https://github.com/nipunbatra/os2018/tree/master/labs/26-Sep).*
 
 1. Write a simple hello world program which uses 2 threads, each displaying its unique number/id - A and B. What happens if you do not use `join`? Extend the above program to use `join`.
 

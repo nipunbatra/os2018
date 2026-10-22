@@ -1,137 +1,96 @@
 ---
-title: "Operating Systems"
-subtitle: "CS 301 - Fall 2018"
-format:
-  html:
-    css: custom.scss
+pagetitle: "CS 301 · Operating Systems"
+description: "Operating Systems at IIT Gandhinagar, Semester I 2018–19"
+body-classes: dl wide
 ---
 
-## Course Information
+::: {.top}
 
-::: {.course-info}
-<div class="info-item">
-  <div class="info-label">Course Code</div>
-  <div class="info-value">CS 301</div>
-</div>
-<div class="info-item">
-  <div class="info-label">Semester</div>
-  <div class="info-value">Fall 2018</div>
-</div>
-<div class="info-item">
-  <div class="info-label">Credits</div>
-  <div class="info-value">3</div>
-</div>
-<div class="info-item">
-  <div class="info-label">Location</div>
-  <div class="info-value">AB7/102</div>
-</div>
+::: {.top-main}
+```{=html}
+<span hidden></span><!-- keeps Quarto from moving the h1 into its own title block -->
+<h1 class="h1">Operating Systems</h1>
+<p class="role">CS 301 · IIT Gandhinagar · Semester I, 2018–19</p>
+<p class="lede" style="margin-top:18px">CS 301 is an introduction to operating systems, organised around the three parts of the textbook: virtualisation of the CPU and memory, concurrency, and persistence. Every lecture links its slides and, for most lectures, the class recording. Labs and homework are hands-on work in C and Python on Linux.</p>
+<dl class="facts">
+  <dt>Instructor</dt><dd><a href="https://nipunbatra.github.io">Prof. Nipun Batra</a></dd>
+  <dt>Email</dt><dd><a href="mailto:nipun.batra@iitgn.ac.in">nipun.batra@iitgn.ac.in</a></dd>
+  <dt>Lectures</dt><dd>Tuesday, Thursday and Friday, 11 am–12 noon, AB7/102</dd>
+  <dt>Labs</dt><dd>Wednesday</dd>
+  <dt>Teaching assistants</dt><dd><a href="#people">3 TAs</a></dd>
+  <dt>Textbook</dt><dd><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/">Operating Systems: Three Easy Pieces</a> (free online)</dd>
+  <dt>Course VM</dt><dd><a href="https://drive.google.com/file/d/1jZVQRuomuYsuK5dkTyuVMxV4oNLFX8Hs/view">Ubuntu VirtualBox image</a></dd>
+</dl>
+```
 :::
 
-## About This Course
-
-This course provides a comprehensive introduction to operating systems, covering fundamental concepts such as process management, memory management, file systems, and concurrency. Students will gain hands-on experience with system programming and learn how modern operating systems manage computer resources efficiently.
-
-### Learning Objectives
-
-By the end of this course, students will be able to:
-
-- Understand the core principles of operating system design
-- Implement process scheduling algorithms
-- Analyze memory management techniques
-- Design concurrent programs using threads and synchronization
-- Understand file system organization and implementation
-- Evaluate system performance and optimization strategies
-
-### Prerequisites
-
-- Data Structures and Algorithms
-- Computer Organization and Architecture
-- Systems Programming in C
-
-## Staff
-
-### Instructor
-**Nipun Batra**  
-Professor, Computer Science  
-Email: [nipun.batra@iitgn.ac.in](mailto:nipun.batra@iitgn.ac.in)
-
-### Teaching Assistants
-- Chanda
-- Subisha
-- Chamanvir
-
-## Schedule
-
-**Lectures:**  
-Tuesday, Thursday, Friday  
-11:00 AM - 12:00 PM  
-Room AB7/102
-
-**Labs:**  
-Monday  
-10:00 AM - 12:00 PM  
-Room AB7/109
-
-## Course Resources
-
-### Textbook
-[**Operating Systems: Three Easy Pieces**](http://pages.cs.wisc.edu/~remzi/OSTEP/)  
-by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
-
-This free, comprehensive textbook covers all major operating system concepts with clear explanations and practical examples.
-
-### Development Environment
-[**Ubuntu VirtualBox VM**](https://drive.google.com/file/d/1jZVQRuomuYsuK5dkTyuVMxV4oNLFX8Hs/view)
-
-Pre-configured Ubuntu virtual machine with all necessary tools and libraries for course assignments.
-
-### Course Code
-[**Code Examples**](code/)
-
-All code examples, demonstrations, and programming exercises used in lectures and labs:
-- Process API examples (fork, exec, wait)
-- CPU scheduling simulations  
-- Memory management programs
-- Threading and synchronization examples
-
-### Project Ideas
-[**Project Proposals**](https://docs.google.com/spreadsheets/d/1eVVmBrCTXHa6XhfewG2S9_if11Ija0s_cNMBp5NMbww/edit?usp=sharing)
-
-Collection of project ideas and proposals for the course project component.
-
-## Assessment & Grading
-
-| Component | Weight | Description |
-|-----------|---------|-------------|
-| Quizzes (4) | 40% | 10% each, covering major topics |
-| End Semester Exam | 10% | Comprehensive final examination |
-| Programming Assignments (2) | 8% | Individual coding projects |
-| Lab Exams (2) | 20% | 10% each, hands-on practical exams |
-| Group Project | 20% | Team-based implementation project |
-| OS Zine | 2% | Creative technical communication |
-
-### Grading Policies
-
-- **Score Negotiation**: Only for unchecked questions or totaling mistakes
-- **Late Submissions**: 10% penalty per day
-- **Collaboration**: Encouraged for learning, but submissions must be individual
-- **Academic Integrity**: Strictly enforced according to institute policies
-
-### Important Notes
-
-- All programming assignments must compile and run
-- Regular attendance is expected for both lectures and labs
-- Project groups will be formed in the first few weeks
-- The OS Zine is inspired by [Julia Evans' zines](https://jvns.ca/zines/)
-
-## Quick Links
-
-::: {.callout-tip}
-### Get Started
-- [Course Lectures](lectures.qmd) - Watch videos and download slides
-- [Labs](labs.qmd) - Hands-on exercises and practical sessions
-- [Assignments](assignments.qmd) - Programming assignments and homework
-- [Projects](projects.qmd) - Explore project ideas and requirements
-- [Schedule](schedule.qmd) - Important dates and timeline
-- [Resources](resources.qmd) - Books, tools, and additional materials
+::: {.next aria-labelledby="record-h"}
+```{=html}
+<span class="label" id="record-h">Course record</span>
+<p class="small" style="margin:0 0 12px">This offering ran from August to November 2018. Its slides, class recordings, homework, lab sheets and quiz papers remain available.</p>
+<dl>
+  <dt>Lectures</dt><dd><span class="stat">32</span></dd>
+  <dt>Recordings</dt><dd><a href="https://www.youtube.com/playlist?list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5">29 lectures</a></dd>
+  <dt>Homework</dt><dd><a href="assignments.html">4</a></dd>
+  <dt>Lab sheets</dt><dd><a href="labs.html">9</a></dd>
+  <dt>Quiz papers</dt><dd><a href="assessment.html#quizzes">3</a></dd>
+</dl>
+<p class="all"><a href="assessment.html#dates">All dates</a> · <a href="feedback.html">Student feedback</a></p>
+```
 :::
+
+:::
+
+```{=html}
+<section class="rule-top" id="lectures"><h2>Lectures</h2>
+<ul class="modules c4">
+  <li><span class="r">1–8</span><a href="schedule.html#processes-and-cpu">Virtualisation: processes and the CPU</a><span class="c">8 lectures</span></li>
+  <li><span class="r">9–16</span><a href="schedule.html#memory">Virtualisation: memory</a><span class="c">8 lectures</span></li>
+  <li><span class="r">17–26</span><a href="schedule.html#concurrency">Concurrency</a><span class="c">10 lectures</span></li>
+  <li><span class="r">27–32</span><a href="schedule.html#persistence">Persistence</a><span class="c">6 lectures</span></li>
+</ul>
+<div class="playlists">
+  <a class="btn ib" href="https://www.youtube.com/playlist?list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>Lecture playlist on YouTube</a>
+  <a class="btn ib" href="code/index.html" target="_blank" rel="noopener noreferrer"><svg class="ic ic-code" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M13.5 5l-3 14"/></svg>Code used in class</a>
+  <a class="btn solid" href="schedule.html">All 32 lectures</a>
+</div>
+</section>
+
+<div class="two rule-top">
+<section id="faq"><h2>Questions</h2>
+<details class="q" id="textbook"><summary>Which textbook does the course follow?</summary><p><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/">Operating Systems: Three Easy Pieces</a> by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau, which is free online. The course follows its three parts, and many lab and homework questions come from its chapters.</p></details>
+<details class="q" id="setup"><summary>What software do I need?</summary><p>Linux, either native or in a virtual machine, with GCC, GDB and htop, and Python 3 from Anaconda. The course provides an <a href="https://drive.google.com/file/d/1jZVQRuomuYsuK5dkTyuVMxV4oNLFX8Hs/view">Ubuntu VirtualBox image</a>.</p></details>
+<details class="q" id="homework"><summary>How is homework submitted?</summary><p>As a typed PDF uploaded on the form, named <code>{branch}_{roll_number}_{name}.pdf</code>, with all code linked as secret GitHub gists. Deadlines are at noon and are hard: the form closes and there are no extensions. See <a href="assignments.html">Homework</a>.</p></details>
+<details class="q" id="project"><summary>Is there a project?</summary><p>Yes. Project ideas are collected in a <a href="https://docs.google.com/spreadsheets/d/1eVVmBrCTXHa6XhfewG2S9_if11Ija0s_cNMBp5NMbww/edit?usp=sharing">shared spreadsheet</a>, a demo or a video has to be shown in class, and projects were graded in rounds. See <a href="assessment.html#project">Project</a>.</p></details>
+<details class="q" id="code"><summary>Where is the code shown in class?</summary><p>In the <a href="code/index.html">code folder</a>: process API examples, scheduling and memory simulators, and thread examples, many of them from the textbook's own code.</p></details>
+</section>
+<section id="references"><h2>References</h2>
+<p class="small muted">Textbook:</p>
+<ul class="refs">
+  <li>Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau, <i>Operating Systems: Three Easy Pieces</i> (<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/">free online</a>)</li>
+</ul>
+<p class="small muted" style="margin-top:14px">Further reading:</p>
+<ul class="refs">
+  <li>Dennis M. Ritchie and Ken Thompson, <a href="https://people.eecs.berkeley.edu/~brewer/cs262/unix.pdf">The UNIX Time-Sharing System</a></li>
+  <li>Maurice J. Bach, <i>The Design of the UNIX Operating System</i></li>
+  <li>Andrew S. Tanenbaum, <i>Modern Operating Systems</i></li>
+  <li>W. Richard Stevens and Stephen A. Rago, <i>Advanced Programming in the UNIX Environment</i></li>
+  <li>Michael Kerrisk, <i>The Linux Programming Interface</i></li>
+</ul>
+<p class="small muted" style="margin-top:14px">Course material:</p>
+<ul class="refs">
+  <li><a href="https://www.youtube.com/playlist?list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5">Lecture recordings</a> on YouTube</li>
+  <li><a href="code/index.html">Code used in class</a></li>
+  <li><a href="resources.html">All resources</a></li>
+</ul>
+</section>
+</div>
+
+<section class="rule-top" id="people"><h2>Teaching assistants</h2>
+<ul class="people">
+  <li>Chanda</li>
+  <li>Subisha</li>
+  <li>Chamanvir</li>
+</ul>
+</section>
+```

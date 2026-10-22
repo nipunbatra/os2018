@@ -1,54 +1,47 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - index.qmd
+    - schedule.qmd
+    - assessment.qmd
+    - assignments.qmd
+    - labs.qmd
+    - resources.qmd
+    - feedback.qmd
+    - code/index.qmd
+    - labs/*.md
+    - lectures.qmd
+    - projects.qmd
+    - lectures/index.qmd
+    - projects/index.qmd
+    - feedback/index.qmd
   resources:
+    - "lectures/*.pdf"
+    - "hw/*.pdf"
+    - "exams/*.pdf"
+    - "labs/*.pdf"
     - "code/**"
 
 website:
-  title: "Operating Systems 2018"
-  description: "CS 301 - Operating Systems Course"
-  navbar:
-    title: "OS"
-    left:
-      - text: "Course Home"
-        href: index.qmd
-      - text: "Lectures"
-        href: lectures.qmd
-      - text: "Labs"
-        href: labs.qmd
-      - text: "Assignments"
-        href: assignments.qmd
-      - text: "Projects"
-        href: projects.qmd
-      - text: "Schedule"
-        href: schedule.qmd
-      - text: "Resources"
-        href: resources.qmd
-      - text: "Feedback" 
-        href: feedback.qmd
-    right:
-      - text: "Instructor Webpage"
-        href: "https://nipunbatra.github.io/"
-  sidebar: false
-  
-  # Google Analytics
+  title: "CS 301 · Operating Systems"
+  favicon: favicon.svg
+  description: "Operating Systems at IIT Gandhinagar, Semester I 2018–19"
+  site-url: https://nipunbatra.github.io/os2018/
+  search: false
   google-analytics: "UA-96903131-1"
-  
-  page-footer:
-    center: |
-      Powered by [Quarto](https://quarto.org) | 
-      Hosted by [GitHub Pages](https://pages.github.com/) |
-      Photos from [Unsplash](https://unsplash.com)
 
 format:
   html:
-    theme: 
-      - cosmo
-      - custom.scss
-    toc: true
-    toc-location: right
-    code-fold: true
-    code-tools: true
+    theme: [cosmo, styles.scss, course.scss]
+    toc: false
+    page-layout: article
+    anchor-sections: false
+    body-classes: dl
+    link-external-newwindow: true
+    include-in-header: course-theme.html
+    include-before-body: rail.html
+    include-after-body: course-tools.html
 
 execute:
   freeze: auto

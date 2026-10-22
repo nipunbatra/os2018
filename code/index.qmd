@@ -1,76 +1,68 @@
 ---
-title: "Code Examples"
-subtitle: "Programming examples used in lectures and labs"
-format:
-  html:
-    css: ../custom.scss
+title: "Code used in class"
 ---
 
-## Course Code Examples
+This folder holds the code examples, demonstrations and simulators used in lectures and labs. Many come from the textbook's [ostep-code](https://github.com/remzi-arpacidusseau/ostep-code) and [ostep-homework](https://github.com/remzi-arpacidusseau/ostep-homework) repositories. Browse the files on [GitHub](https://github.com/nipunbatra/os2018/tree/master/code).
 
-This directory contains all the code examples, demonstrations, and utilities used throughout the Operating Systems course.
+## Contents
 
-## Directory Structure
+### Processes
 
-### Process Examples
 - **Process API**: `fork_demo_*.c`, `exec_demo_*.c`, `wait_demo_*.c`
-- **Process Creation**: `p1.c`, `p2.c`, `p3.c`, `p4.c`
-- **Hello World Programs**: `hello.c`, `hello_world.c`, `hello_assembly.c`
+- **Process creation**: [`p1.c`](p1.c), [`p2.c`](p2.c), [`p3.c`](p3.c), [`p4.c`](p4.c)
+- **Hello world programs**: [`hello.c`](hello.c), [`hello_world.c`](hello_world.c), [`hello_assembly.c`](hello_assembly.c)
 
-### CPU Scheduling
-- **Scheduling Simulator**: `scheduler.py`, `cpu-virtual.py`
-- **MLFQ Implementation**: `mlfq.py`
-- **Lottery Scheduling**: `cpu-sched-lottery/lottery.c`
+### CPU scheduling
 
-### Memory Management
-- **Memory Examples**: `mem.c`, `mem2.c`, `mem3.c`
-- **Address Translation**: `memory-address.c`
-- **Virtual Memory**: `vm-intro/va.c`
-- **Memory Simulation**: `relocation.py`
+- **Scheduling simulator**: [`scheduler.py`](scheduler.py), [`cpu-virtual.py`](cpu-virtual.py)
+- **MLFQ**: [`mlfq.py`](mlfq.py)
+- **Lottery scheduling**: [`cpu-sched-lottery/lottery.c`](cpu-sched-lottery/lottery.c)
 
-### Threading and Concurrency
-- **Thread Examples**: `hello_thread.c`, `sum_thread.c`
-- **Thread API**: `threads-intro/` directory
-- **Synchronization**: Files in various lab directories
+### Memory
 
-### I/O and System Calls
-- **I/O Examples**: `io.c`
-- **System Call Tracing**: `trace-io.*`
+- **Memory examples**: [`mem.c`](mem.c), [`mem2.c`](mem2.c), [`mem3.c`](mem3.c)
+- **Address translation**: [`memory-address.c`](memory-address.c)
+- **Virtual memory**: [`vm-intro/va.c`](vm-intro/va.c)
+- **Memory simulation**: [`relocation.py`](relocation.py)
 
-### Python Simulators
-- **CPU Scheduling**: `scheduler.py`
-- **Memory Management**: `relocation.py`, `x86.py`
-- **Process Execution**: `process-run.py`
+### Threads and concurrency
 
-### Assembly Examples
-- **Assembly Code**: `hello_world.s`, `loop.s`, `simple-race.s`
-- **Threading**: `looping-race-nolock.s`
+- **Thread examples**: [`hello_thread.c`](hello_thread.c), [`sum_thread.c`](sum_thread.c)
+- **Thread API**: `threads-intro/`
+- **Synchronisation**: code in the [lab folders](https://github.com/nipunbatra/os2018/tree/master/labs)
 
-## How to Use
+### I/O and system calls
+
+- **I/O examples**: [`io.c`](io.c)
+- **System call tracing**: `trace-io.*`
+
+### Python simulators
+
+- **CPU scheduling**: [`scheduler.py`](scheduler.py)
+- **Memory management**: [`relocation.py`](relocation.py), [`x86.py`](x86.py)
+- **Process execution**: [`process-run.py`](process-run.py)
+
+### Assembly
+
+- **Assembly code**: [`hello_world.s`](hello_world.s), [`loop.s`](loop.s), [`simple-race.s`](simple-race.s)
+- **Threading**: [`looping-race-nolock.s`](looping-race-nolock.s)
+
+## How to use
 
 1. **Compilation**: Most C programs can be compiled with `gcc filename.c -o filename`
-2. **Python Scripts**: Run with `python3 script.py`
+2. **Python scripts**: Run with `python3 script.py`
 3. **Makefiles**: Use `make` in directories that contain Makefiles
 4. **Threading**: Compile with `-pthread` flag for threading examples
 
-## Common Headers
-- `common.h` - Shared definitions and includes
-- `common_threads.h` - Threading-specific includes
+## Common headers
 
-## Lab-Specific Code
-Several subdirectories contain code specific to lab exercises:
-- `intro/` - Introduction examples
-- `cpu-api/` - Process API exercises  
-- `threads-intro/` - Threading introduction
-- `vm-intro/` - Virtual memory introduction
+- `common.h`: Shared definitions and includes
+- `common_threads.h`: Threading-specific includes
 
-::: {.callout-tip}
-### Getting Started
-- Start with the `intro/` directory for basic examples
-- Use the Python simulators to understand concepts before diving into C code
-- Check the README files in subdirectories for specific instructions
-:::
+## Subfolders
 
----
-
-**Note**: All code examples are provided for educational purposes. Make sure to understand the concepts before running the programs.
+Subfolders from the textbook's code:
+- `intro/`: Introduction examples
+- `cpu-api/`: Process API exercises
+- `threads-intro/`: Threading introduction
+- `vm-intro/`: Virtual memory introduction

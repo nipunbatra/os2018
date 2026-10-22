@@ -1,114 +1,23 @@
 ---
 title: "Labs"
-subtitle: "Hands-on exercises and practical sessions"
-format:
-  html:
-    css: custom.scss
 ---
 
-## Lab Schedule
+Lab sheets from the 2018 offering, in order. Most labs were held on Wednesdays; each sheet is named after the date of its session. Code written for some of the labs is in the [`labs/`](https://github.com/nipunbatra/os2018/tree/master/labs) folder on GitHub.
 
-### Lab 1: Process Commands
-**Date: Aug 12**  
-**Topic:** Process commands (top, ps, htop)
+```{=html}
+<table class="t" data-quarto-disable-processing="true">
+<thead><tr><th>Date</th><th>Lab</th><th>Material</th></tr></thead>
+<tbody>
+<tr><td>–</td><td>Lab 1: Unix process commands (<code>ps</code>, <code>watch</code>) and the process API programs from OSTEP chapter 5</td><td><a href="labs/lab-1.pdf">Sheet</a> (PDF)</td></tr>
+<tr><td>12 Sep</td><td>Kernel modules and <code>strace</code>, demonstrated by the TAs; OSTEP chapter 21, questions 1–7</td><td><a href="labs/12-Sep.html">Sheet</a></td></tr>
+<tr><td>15 Sep</td><td>Same exercises as 12 Sep</td><td><a href="labs/15-Sep.html">Sheet</a></td></tr>
+<tr><td>19 Sep</td><td>Threads and the Chrome process model: <code>ps</code>, <code>top</code>, <code>pstree</code>, <code>/proc</code> and <code>strace</code>; a first threaded program</td><td><a href="labs/19-Sep.html">Sheet</a></td></tr>
+<tr><td>26 Sep</td><td>The pthreads API: creating and joining threads, passing arguments, a shared counter</td><td><a href="labs/26-Sep.html">Sheet</a>, <a href="https://github.com/nipunbatra/os2018/tree/master/labs/26-Sep">code</a></td></tr>
+<tr><td>17 Oct</td><td>Multithreading in practice, locks from load–store, C11 atomics, pthread mutexes and <code>xchg</code></td><td><a href="labs/17-Oct.html">Sheet</a>, <a href="https://github.com/nipunbatra/os2018/tree/master/labs/17-Oct">code</a></td></tr>
+<tr><td>24 Oct</td><td>Lock-based concurrent data structures (OSTEP chapter 29)</td><td><a href="labs/24-Oct.html">Sheet</a>, <a href="https://github.com/nipunbatra/os2018/tree/master/labs/24-Oct">code</a></td></tr>
+<tr><td>7 Nov</td><td>Multithreading and multiprocessing in Python</td><td><a href="labs/7-Nov.html">Sheet</a></td></tr>
+<tr><td>14 Nov</td><td>Files and directories (OSTEP chapter 39)</td><td><a href="labs/14-Nov.html">Sheet</a></td></tr>
+</tbody></table>
+```
 
-Learn to use Unix process management tools and understand process states.
-
-**Materials:** [Lab 1 PDF](labs/lab-1.pdf)
-
-### Lab 2: Thread Introduction
-**Date: Sep 25**  
-**Topic:** Thread Introduction + Chrome Process Model
-
-Introduction to threading concepts and understanding Chrome's multi-process architecture.
-
-**Materials:** [Lab 2 Instructions](labs/19-Sep.md)
-
-### Lab 3: Thread API + Locks
-**Date: Oct 16**  
-**Topic:** Thread API and Basic Locks
-
-Practice with pthread API and implement basic locking mechanisms.
-
-**Materials:** [Lab 3 Instructions](labs/26-Sep.md)
-
-### Lab 4: Advanced Locks
-**Date: Oct 22**  
-**Topic:** Locks Implementation
-
-Implement and test different types of locks and synchronization primitives.
-
-**Materials:** [Lab 4 Instructions](labs/17-Oct.md)
-
-### Lab 5: Concurrent Data Structures
-**Date: Oct 30**  
-**Topic:** Concurrent Data Structures
-
-Design and implement thread-safe data structures.
-
-**Materials:** [Lab 5 Instructions](labs/24-Oct.md)
-
-### Lab 6: Memory Management
-**Date: Nov 7**  
-**Topic:** Memory allocation and management
-
-Implement memory allocators and understand virtual memory concepts.
-
-**Materials:** [Lab 6 Instructions](labs/7-Nov.md)
-
-### Lab 7: File Systems
-**Date: Nov 14**  
-**Topic:** File system implementation
-
-Explore file system internals and implement basic file operations.
-
-**Materials:** [Lab 7 Instructions](labs/14-Nov.md)
-
-### Lab 8: System Performance
-**Date: Dec 12**  
-**Topic:** System performance analysis
-
-Use profiling tools to analyze and optimize system performance.
-
-**Materials:** [Lab 8 Instructions](labs/12-Sep.md)
-
-## Lab Guidelines
-
-### Preparation
-- Read the lab instructions before attending
-- Set up your development environment
-- Review related lecture materials
-- Come with specific questions
-
-### During Lab
-- Work collaboratively but submit individual reports
-- Ask TAs for help when needed
-- Document your findings and observations
-- Test your solutions thoroughly
-
-### Lab Reports
-- Submit a brief report (1-2 pages) after each lab
-- Include screenshots, code snippets, and analysis
-- Answer all questions posed in the lab instructions
-- Submit within one week of the lab session
-
-## Lab Exams
-
-### Mid-term Lab Exam
-**Date: Oct 25**  
-**Coverage:** Labs 1-4 (Processes, Threads, Locks)
-
-### Final Lab Exam
-**Date: Nov 25**  
-**Coverage:** Labs 5-8 (Concurrency, Memory, File Systems, Performance)
-
-### Exam Format
-- Hands-on programming and debugging tasks
-- Open book and open notes
-- Duration: 2 hours
-- Individual work only
-
-::: {.callout-note}
-### Lab Environment
-All labs are conducted in AB7/109 using the provided Ubuntu VMs. Make sure to save your work frequently and backup important files.
-:::
+Programs used in lectures are in the [code folder](code/index.qmd).

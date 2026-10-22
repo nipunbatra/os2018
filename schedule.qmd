@@ -1,147 +1,98 @@
 ---
-title: "Schedule"
-subtitle: "Course timeline and important dates"
-format:
-  html:
-    css: custom.scss
+title: "Lectures"
+body-classes: dl wide
 ---
 
-## Course Timeline
+<!-- Generated in the dl-2026 format: one <tr id="lecture-N"> per lecture, resources grouped as reading (mats), videos (vids) and practice (prac). Copy an existing link to add one. -->
 
-### Important Dates
+```{=html}
+<p class="lede">The course follows the three parts of <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/">Operating Systems: Three Easy Pieces</a>: virtualisation, concurrency and persistence. Each lecture links its slides and its class recording; lectures 15 to 17 were not recorded. Programs shown in class are in the <a href="code/index.html">code folder</a>.</p>
+<div class="key" aria-label="Key to resource icons"><span><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg>Slides</span><span><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>Full recording</span><span><svg class="ic ic-code" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M13.5 5l-3 14"/></svg>Code</span></div>
+<nav class="jump" aria-label="Modules"><a href="#processes-and-cpu">Virtualisation: processes and the CPU<span class="num">1–8</span></a><a href="#memory">Virtualisation: memory<span class="num">9–16</span></a><a href="#concurrency">Concurrency<span class="num">17–26</span></a><a href="#persistence">Persistence<span class="num">27–32</span></a></nav>
+<div class="playlists"><a class="btn ib" href="https://www.youtube.com/playlist?list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>Lecture playlist on YouTube</a><a class="btn ib" href="code/index.html" target="_blank" rel="noopener noreferrer"><svg class="ic ic-code" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M13.5 5l-3 14"/></svg>Code used in class</a></div>
+<div class="lectures">
+<section class="mod" id="processes-and-cpu" aria-labelledby="processes-and-cpu-title"><div class="mod-h"><h2 id="processes-and-cpu-title">Virtualisation: processes and the CPU</h2><span class="r">Lectures 1–8</span></div>
+<table class="lt" data-quarto-disable-processing="true"><tbody>
+<tr id="lecture-1"><td class="no"><span class="visually-hidden">Lecture </span>01</td><td class="topic"><h3 id="lecture-1-title">Introduction and logistics</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/1-intro-logistics.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 1"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=whp34MZbG6o&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Introduction and logistics, lecture 1"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div><div class="rl prac"><a class="r r-code" href="code/cpu-virtual.py" aria-label="Demo: cpu-virtual.py, lecture 1"><svg class="ic ic-code" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M13.5 5l-3 14"/></svg><span class="t">Demo: cpu-virtual.py</span></a><a class="r r-code" href="code/mem.c" aria-label="Demo: mem.c, lecture 1"><svg class="ic ic-code" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M13.5 5l-3 14"/></svg><span class="t">Demo: mem.c</span></a><a class="r r-code" href="code/thread.py" aria-label="Demo: thread.py, lecture 1"><svg class="ic ic-code" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M13.5 5l-3 14"/></svg><span class="t">Demo: thread.py</span></a></div></td></tr>
+<tr id="lecture-2"><td class="no"><span class="visually-hidden">Lecture </span>02</td><td class="topic"><h3 id="lecture-2-title">The process</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/2-process.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 2"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=UbDB4vPs5OI&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="The process, lecture 2"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-3"><td class="no"><span class="visually-hidden">Lecture </span>03</td><td class="topic"><h3 id="lecture-3-title">The process API (fork, wait, exec)</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/3-process-api.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 3"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=rMFV7vwqbpc&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="The process API (fork, wait, exec), lecture 3"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-4"><td class="no"><span class="visually-hidden">Lecture </span>04</td><td class="topic"><h3 id="lecture-4-title">Revisiting the Linux shell</h3></td>
+<td class="res"><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=28wd6Rvzda0&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Revisiting the Linux shell, lecture 4"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-5"><td class="no"><span class="visually-hidden">Lecture </span>05</td><td class="topic"><h3 id="lecture-5-title">CPU scheduling policies</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/5-scheduling.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 5"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=ym9vtzwg7o8&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="CPU scheduling policies, lecture 5"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-6"><td class="no"><span class="visually-hidden">Lecture </span>06</td><td class="topic"><h3 id="lecture-6-title">CPU scheduling: MLFQ</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/6-cpu-scheduling.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 6"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=BTNZI7khUI8&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="CPU scheduling: MLFQ, lecture 6"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a><a class="r r-recording" href="https://www.youtube.com/watch?v=Z-lmEcka4A0&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Addendum: practice for scheduling policies, lecture 6"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Addendum: practice for scheduling policies</span></a></div></td></tr>
+<tr id="lecture-7"><td class="no"><span class="visually-hidden">Lecture </span>07</td><td class="topic"><h3 id="lecture-7-title">MLFQ and limited direct execution</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/7-cpu-scheduling-execution.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 7"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=jEiCTge0GbQ&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="MLFQ and limited direct execution, lecture 7"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-8"><td class="no"><span class="visually-hidden">Lecture </span>08</td><td class="topic"><h3 id="lecture-8-title">Limited direct execution and memory virtualisation</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/8-limited-direct-execution-memory-intro.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 8"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=fExbQPJJrMg&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Limited direct execution and memory virtualisation, lecture 8"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+</tbody></table></section>
 
-| Date | Event | Description |
-|------|-------|-------------|
-| Aug 6 | **Course Begins** | First lecture: Introduction to OS |
-| Aug 23 | **Quiz 1** | Covers processes and CPU scheduling |
-| Aug 27 | **Assignment 1 Due** | Process API programming |
-| Sep 13 | **Quiz 2** | Covers memory management |
-| Sep 27 | **Mid-semester Break** | No classes |
-| Oct 25 | **Mid-term Lab Exam** | Practical exam covering labs 1-4 |
-| Nov 5 | **Quiz 3** | Covers concurrency and I/O |
-| Nov 15 | **Assignment 2 Due** | Memory management programming |
-| Nov 19 | **Quiz 4** | Covers file systems |
-| Nov 20 | **OS Zine Due** | Creative project submission |
-| Nov 25 | **Final Lab Exam** | Comprehensive lab exam |
-| Dec 15 | **Project Presentations** | Final project demonstrations |
+<section class="mod" id="memory" aria-labelledby="memory-title"><div class="mod-h"><h2 id="memory-title">Virtualisation: memory</h2><span class="r">Lectures 9–16</span></div>
+<table class="lt" data-quarto-disable-processing="true"><tbody>
+<tr id="lecture-9"><td class="no"><span class="visually-hidden">Lecture </span>09</td><td class="topic"><h3 id="lecture-9-title">Memory management: introduction</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/9-memory-management-1.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 9"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=jM0Fc9HNO64&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Memory management: introduction, lecture 9"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-10"><td class="no"><span class="visually-hidden">Lecture </span>10</td><td class="topic"><h3 id="lecture-10-title">Base and bounds, and segmentation</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/10-memory-management-base-bounds-seg.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 10"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=x4L4lgY3Clg&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Base and bounds, and segmentation, lecture 10"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-11"><td class="no"><span class="visually-hidden">Lecture </span>11</td><td class="topic"><h3 id="lecture-11-title">Segmentation and paging</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/11-memory-management-segmentation-paging.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 11"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=powd2SIH3Hk&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Segmentation and paging, lecture 11"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-12"><td class="no"><span class="visually-hidden">Lecture </span>12</td><td class="topic"><h3 id="lecture-12-title">Paging and TLBs</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/12-memory-management-paging-tlb.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 12"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=-R0bx_N_QjE&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Paging and TLBs, lecture 12"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-13"><td class="no"><span class="visually-hidden">Lecture </span>13</td><td class="topic"><h3 id="lecture-13-title">TLBs and advanced paging</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/13-memory-management-paging-advanced.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 13"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=v4tXAVMbOhQ&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="TLBs and advanced paging, lecture 13"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-14"><td class="no"><span class="visually-hidden">Lecture </span>14</td><td class="topic"><h3 id="lecture-14-title">Advanced paging and swapping</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/14-memory-management-adv-paging-swapping.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 14"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=eTvjnXmddXQ&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Advanced paging and swapping, lecture 14"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-15"><td class="no"><span class="visually-hidden">Lecture </span>15</td><td class="topic"><h3 id="lecture-15-title">Swapping</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/15-swapping.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 15"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div></td></tr>
+<tr id="lecture-16"><td class="no"><span class="visually-hidden">Lecture </span>16</td><td class="topic"><h3 id="lecture-16-title">Swapping and free-space management</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/16-swapping-free-memory.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 16"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div></td></tr>
+<tr id="linux-memory"><td class="no"><span aria-hidden="true">·</span></td><td class="topic"><h3 id="linux-memory-title">Memory management in Linux</h3></td>
+<td class="res"><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=7aONIVSXiJ8" target="_blank" rel="noopener noreferrer" aria-label="Talk: Introduction to memory management in Linux, lecture 16"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Talk: Introduction to memory management in Linux</span></a></div></td></tr>
+</tbody></table></section>
 
-## Weekly Schedule
+<section class="mod" id="concurrency" aria-labelledby="concurrency-title"><div class="mod-h"><h2 id="concurrency-title">Concurrency</h2><span class="r">Lectures 17–26</span></div>
+<table class="lt" data-quarto-disable-processing="true"><tbody>
+<tr id="lecture-17"><td class="no"><span class="visually-hidden">Lecture </span>17</td><td class="topic"><h3 id="lecture-17-title">Concurrency and threads</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/17-concurrency.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 17"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div></td></tr>
+<tr id="lecture-18"><td class="no"><span class="visually-hidden">Lecture </span>18</td><td class="topic"><h3 id="lecture-18-title">Quiz discussion; threads and locks</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/18-concurrency-2.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 18"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=-pt9ogP1RjU&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Quiz discussion; threads and locks, lecture 18"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-19"><td class="no"><span class="visually-hidden">Lecture </span>19</td><td class="topic"><h3 id="lecture-19-title">Locks</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/19-locks.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 19"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=EFEpfC4TvnA&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Locks, lecture 19"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-20"><td class="no"><span class="visually-hidden">Lecture </span>20</td><td class="topic"><h3 id="lecture-20-title">Advanced locks</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/20-advanced-locks.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 20"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=qP-lc3ksL5k&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Advanced locks, lecture 20"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-21"><td class="no"><span class="visually-hidden">Lecture </span>21</td><td class="topic"><h3 id="lecture-21-title">Condition variables</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/21-concurrency-cv.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 21"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=qsieiq_LP-Q&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Condition variables, lecture 21"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-22"><td class="no"><span class="visually-hidden">Lecture </span>22</td><td class="topic"><h3 id="lecture-22-title">Condition variables (advanced)</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/22-concurrency-cv-2.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 22"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=mI_1AVwQ8a0&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Condition variables (advanced), lecture 22"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-23"><td class="no"><span class="visually-hidden">Lecture </span>23</td><td class="topic"><h3 id="lecture-23-title">Condition variables and semaphores</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/23-concurrency-cv-semaphores.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 23"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=VFdys9JvgYk&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Condition variables and semaphores, lecture 23"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-24"><td class="no"><span class="visually-hidden">Lecture </span>24</td><td class="topic"><h3 id="lecture-24-title">Semaphores and deadlocks</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/24-semaphores-deadlocks.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 24"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=_nPL6mI26L4&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Semaphores and deadlocks, lecture 24"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-25"><td class="no"><span class="visually-hidden">Lecture </span>25</td><td class="topic"><h3 id="lecture-25-title">Common concurrency problems</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/25-semaphores-deadlocks-2.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 25"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=f7iGpQLQYNA&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Common concurrency problems, lecture 25"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-26"><td class="no"><span class="visually-hidden">Lecture </span>26</td><td class="topic"><h3 id="lecture-26-title">Semaphores revision and common concurrency problems</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/26-bugs.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 26"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=ESRpV4vgutk&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Semaphores revision and common concurrency problems, lecture 26"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+</tbody></table></section>
 
-### Lectures
-- **Tuesday**: 11:00 AM - 12:00 PM (AB7/102)
-- **Thursday**: 11:00 AM - 12:00 PM (AB7/102)
-- **Friday**: 11:00 AM - 12:00 PM (AB7/102)
+<section class="mod" id="persistence" aria-labelledby="persistence-title"><div class="mod-h"><h2 id="persistence-title">Persistence</h2><span class="r">Lectures 27–32</span></div>
+<table class="lt" data-quarto-disable-processing="true"><tbody>
+<tr id="lecture-27"><td class="no"><span class="visually-hidden">Lecture </span>27</td><td class="topic"><h3 id="lecture-27-title">I/O devices and hard disks</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/27-io-disk.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 27"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=fP5hK0-n5ac&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="I/O devices and hard disks, lecture 27"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-28"><td class="no"><span class="visually-hidden">Lecture </span>28</td><td class="topic"><h3 id="lecture-28-title">Hard disks and RAID</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/28-disk-raid.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 28"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=z0FYlhFF1-M&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Hard disks and RAID, lecture 28"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-29"><td class="no"><span class="visually-hidden">Lecture </span>29</td><td class="topic"><h3 id="lecture-29-title">RAID (continued)</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/29-raid-2.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 29"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=zvIk_I9kiTM&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="RAID (continued), lecture 29"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-30"><td class="no"><span class="visually-hidden">Lecture </span>30</td><td class="topic"><h3 id="lecture-30-title">Files and directories</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/30-filesystem-1.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 30"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=g6OCSlEmNPU&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="Files and directories, lecture 30"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-31"><td class="no"><span class="visually-hidden">Lecture </span>31</td><td class="topic"><h3 id="lecture-31-title">File systems (continued)</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/31-filesystem-2.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 31"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=MckXuex8xrM&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="File systems (continued), lecture 31"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+<tr id="lecture-32"><td class="no"><span class="visually-hidden">Lecture </span>32</td><td class="topic"><h3 id="lecture-32-title">File system implementation</h3></td>
+<td class="res"><div class="rl mats"><a class="r r-slides" href="lectures/32-filesystem-implementation.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides, lecture 32"><svg class="ic ic-slides" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M8 12.5v-2M12 12.5V8M16 12.5v-3"/></svg><span class="t">Slides</span></a></div><div class="rl vids"><a class="r r-recording" href="https://www.youtube.com/watch?v=fqTeNEDrAlw&amp;list=PLftoLyLEwECB3NsNfQ1oxtt8IoBNRWcO5" target="_blank" rel="noopener noreferrer" aria-label="File system implementation, lecture 32"><svg class="ic ic-recording" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="t">Recording</span></a></div></td></tr>
+</tbody></table></section>
 
-### Labs
-- **Monday**: 10:00 AM - 12:00 PM (AB7/109)
-
-### Office Hours
-- **Instructor**: Tuesday & Thursday 2:00 PM - 3:00 PM
-- **TAs**: Monday & Wednesday 3:00 PM - 4:00 PM
-
-## Course Phases
-
-### Phase 1: Foundations (Weeks 1-6)
-**Topics:** Introduction, Processes, CPU Scheduling, Memory Basics
-
-**Key Deliverables:**
-- Quiz 1 (Aug 23)
-- Assignment 1 (Aug 27)
-- Lab exercises 1-2
-
-### Phase 2: Memory Management (Weeks 7-10)
-**Topics:** Address Translation, Paging, Swapping, Virtual Memory
-
-**Key Deliverables:**
-- Quiz 2 (Sep 13)
-- Lab exercises 3-4
-- Project proposal
-
-### Phase 3: Concurrency (Weeks 11-14)
-**Topics:** Threads, Locks, Synchronization, Deadlocks
-
-**Key Deliverables:**
-- Mid-term Lab Exam (Oct 25)
-- Quiz 3 (Nov 5)
-- Lab exercises 5-6
-
-### Phase 4: I/O and File Systems (Weeks 15-16)
-**Topics:** I/O Systems, Hard Drives, RAID, File Systems
-
-**Key Deliverables:**
-- Assignment 2 (Nov 15)
-- Quiz 4 (Nov 19)
-- OS Zine (Nov 20)
-- Final Lab Exam (Nov 25)
-- Project presentations (Dec 15)
-
-## Exam Schedule
-
-### Quizzes (40% total)
-- **Quiz 1**: Aug 23 - Processes, CPU Scheduling
-- **Quiz 2**: Sep 13 - Memory Management
-- **Quiz 3**: Nov 5 - Concurrency, I/O
-- **Quiz 4**: Nov 19 - File Systems
-
-### Lab Exams (20% total)
-- **Mid-term Lab Exam**: Oct 25 - Hands-on programming
-- **Final Lab Exam**: Nov 25 - Comprehensive practical exam
-
-### Final Exam (10%)
-- **Date**: TBD during exam period
-- **Duration**: 3 hours
-- **Format**: Written exam covering all course material
-
-## Assignment Timeline
-
-### Programming Assignments (8% total)
-- **Assignment 1**: Process API (Due Aug 27)
-- **Assignment 2**: Memory Management (Due Nov 15)
-
-### Course Project (20%)
-- **Team Formation**: Week 3
-- **Project Proposal**: Week 6
-- **Mid-term Review**: Week 10
-- **Final Presentation**: Week 15
-
-### OS Zine (2%)
-- **Assignment**: Week 12
-- **Due Date**: Nov 20
-- **Format**: Creative technical communication
-
-## Holiday Schedule
-
-### Holidays and Breaks
-- **Aug 15**: Independence Day (No class)
-- **Sep 27 - Oct 14**: Mid-semester break
-- **Oct 18**: No class (Faculty meeting)
-- **Nov 12-13**: Diwali break (No classes)
-
-### Make-up Classes
-- Additional sessions may be scheduled if needed
-- Announcements will be made in advance
-- Check course website for updates
-
-## Study Schedule Recommendations
-
-### Weekly Study Plan
-- **Monday**: Review previous week's lectures
-- **Tuesday**: Preview lecture material
-- **Wednesday**: Work on assignments/projects
-- **Thursday**: Attend lecture and review notes
-- **Friday**: Attend lecture and practice problems
-- **Weekend**: Complete lab exercises and reading
-
-### Exam Preparation
-- **3 weeks before**: Start reviewing all material
-- **2 weeks before**: Practice problems and past exams
-- **1 week before**: Form study groups and clarify doubts
-- **Day before**: Light review and rest well
-
-::: {.callout-warning}
-### Important Notes
-- All dates are subject to change with advance notice
-- Check the course website regularly for updates
-- Inform instructor in advance about any conflicts
-- Late submissions have penalties as per course policy
-:::
+</div>
+<p class="small muted">Slides are the PDFs used in class. Recordings are full class videos from the 2018 offering.</p>
+```
